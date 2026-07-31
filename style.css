@@ -4,7 +4,7 @@
 :root {
     --bg-base:      #f4f6fb;
     --bg-card:      #ffffff;
-    --bg-section:   #eef1f8;
+    --bg-section:   #f8f9ff;
     --bg-glass:     rgba(255,255,255,0.7);
     --bg-glass-hov: rgba(255,255,255,0.95);
     --border:       rgba(0,0,0,0.07);
@@ -511,8 +511,8 @@ section { padding: 110px 0; }
    ===================================================== */
 .about {
     background:
-        radial-gradient(ellipse at 95% 10%, rgba(79,91,213,0.10) 0%, transparent 45%),
-        radial-gradient(ellipse at 5%  90%, rgba(14,165,233,0.09) 0%, transparent 45%),
+        radial-gradient(ellipse at 95% 5%,  rgba(79,91,213,0.22)  0%, transparent 55%),
+        radial-gradient(ellipse at 5%  95%, rgba(14,165,233,0.20) 0%, transparent 55%),
         #ffffff;
     position: relative;
 }
@@ -618,9 +618,10 @@ section { padding: 110px 0; }
    ===================================================== */
 .skills {
     background:
-        radial-gradient(ellipse at 0%   50%, rgba(168,85,247,0.09) 0%, transparent 45%),
-        radial-gradient(ellipse at 100% 80%, rgba(14,165,233,0.09) 0%, transparent 45%),
-        var(--bg-section);
+        radial-gradient(ellipse at 0%   50%, rgba(168,85,247,0.22) 0%, transparent 55%),
+        radial-gradient(ellipse at 100% 80%, rgba(14,165,233,0.20) 0%, transparent 55%),
+        radial-gradient(ellipse at 60%  10%, rgba(79,91,213,0.12)  0%, transparent 45%),
+        #f8f9ff;
     position: relative;
 }
 
@@ -698,8 +699,9 @@ section { padding: 110px 0; }
    ===================================================== */
 .projects {
     background:
-        radial-gradient(ellipse at 100% 0%,   rgba(14,165,233,0.10) 0%, transparent 45%),
-        radial-gradient(ellipse at 0%   100%, rgba(168,85,247,0.08) 0%, transparent 45%),
+        radial-gradient(ellipse at 100% 0%,   rgba(14,165,233,0.22)  0%, transparent 55%),
+        radial-gradient(ellipse at 0%   100%, rgba(168,85,247,0.20) 0%, transparent 55%),
+        radial-gradient(ellipse at 50%  50%,  rgba(79,91,213,0.08)  0%, transparent 40%),
         #ffffff;
     position: relative;
 }
@@ -815,10 +817,10 @@ section { padding: 110px 0; }
    ===================================================== */
 .certifications {
     background:
-        radial-gradient(ellipse at 50%  0%,   rgba(79,91,213,0.09)  0%, transparent 50%),
-        radial-gradient(ellipse at 100% 100%, rgba(168,85,247,0.08) 0%, transparent 45%),
-        radial-gradient(ellipse at 0%   100%, rgba(14,165,233,0.08) 0%, transparent 45%),
-        var(--bg-section);
+        radial-gradient(ellipse at 50%  0%,   rgba(79,91,213,0.22)  0%, transparent 60%),
+        radial-gradient(ellipse at 100% 100%, rgba(168,85,247,0.20) 0%, transparent 55%),
+        radial-gradient(ellipse at 0%   100%, rgba(14,165,233,0.18) 0%, transparent 50%),
+        #f8f9ff;
     position: relative;
 }
 
@@ -877,9 +879,9 @@ section { padding: 110px 0; }
    ===================================================== */
 .contact {
     background:
-        radial-gradient(ellipse at 0%   0%,   rgba(79,91,213,0.10)  0%, transparent 45%),
-        radial-gradient(ellipse at 100% 100%, rgba(14,165,233,0.09)  0%, transparent 45%),
-        radial-gradient(ellipse at 80%  20%,  rgba(168,85,247,0.07) 0%, transparent 40%),
+        radial-gradient(ellipse at 0%   0%,   rgba(79,91,213,0.22)  0%, transparent 55%),
+        radial-gradient(ellipse at 100% 100%, rgba(14,165,233,0.20)  0%, transparent 55%),
+        radial-gradient(ellipse at 80%  20%,  rgba(168,85,247,0.18) 0%, transparent 50%),
         #ffffff;
     position: relative;
 }
