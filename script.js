@@ -6,7 +6,8 @@ const roles = [
     'Computer Vision Enthusiast',
     'LLM Fine-Tuning Specialist',
     'Kubernetes & Cloud Native Dev',
-    'Data Science Practitioner'
+    'Data Science Practitioner',
+    'AI Enthusiastic Researcher'
 ];
 let roleIdx = 0, charIdx = 0, deleting = false;
 const typedEl = document.getElementById('typedText');

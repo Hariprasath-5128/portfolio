@@ -828,6 +828,7 @@ section { padding: 110px 0; }
 }
 .cert-logo.oracle { background: rgba(255, 0, 0, 0.1); color: #f03; }
 .cert-logo.google { background: rgba(66, 133, 244, 0.1); color: #4285f4; }
+.cert-logo.gcp { background: rgba(56, 189, 248, 0.1); color: #38bdf8; }
 
 .cert-info h3 {
     font-size: 0.98rem;
