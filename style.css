@@ -510,29 +510,11 @@ section { padding: 110px 0; }
    ABOUT
    ===================================================== */
 .about {
-    background: var(--bg-card);
+    background:
+        radial-gradient(ellipse at 95% 10%, rgba(79,91,213,0.10) 0%, transparent 45%),
+        radial-gradient(ellipse at 5%  90%, rgba(14,165,233,0.09) 0%, transparent 45%),
+        #ffffff;
     position: relative;
-    overflow: hidden;
-}
-.about::before {
-    content: '';
-    position: absolute;
-    top: -120px; right: -100px;
-    width: 600px; height: 600px;
-    background: radial-gradient(ellipse, rgba(79,91,213,0.07) 0%, transparent 70%);
-    border-radius: 50%;
-    pointer-events: none;
-    animation: ambientFloat 14s ease-in-out infinite;
-}
-.about::after {
-    content: '';
-    position: absolute;
-    bottom: -100px; left: -80px;
-    width: 500px; height: 500px;
-    background: radial-gradient(ellipse, rgba(14,165,233,0.06) 0%, transparent 70%);
-    border-radius: 50%;
-    pointer-events: none;
-    animation: ambientFloat 18s ease-in-out infinite reverse;
 }
 
 .about-grid {
@@ -635,33 +617,11 @@ section { padding: 110px 0; }
    SKILLS
    ===================================================== */
 .skills {
-    background: var(--bg-section);
+    background:
+        radial-gradient(ellipse at 0%   50%, rgba(168,85,247,0.09) 0%, transparent 45%),
+        radial-gradient(ellipse at 100% 80%, rgba(14,165,233,0.09) 0%, transparent 45%),
+        var(--bg-section);
     position: relative;
-    overflow: hidden;
-}
-.skills::before {
-    content: '';
-    position: absolute;
-    top: 50%; left: -150px;
-    transform: translateY(-50%);
-    width: 700px; height: 700px;
-    background: radial-gradient(ellipse,
-        rgba(168,85,247,0.06) 0%,
-        rgba(79,91,213,0.05) 40%,
-        transparent 70%);
-    border-radius: 50%;
-    pointer-events: none;
-    animation: ambientFloat 20s ease-in-out infinite;
-}
-.skills::after {
-    content: '';
-    position: absolute;
-    bottom: -80px; right: -80px;
-    width: 450px; height: 450px;
-    background: radial-gradient(ellipse, rgba(14,165,233,0.07) 0%, transparent 70%);
-    border-radius: 50%;
-    pointer-events: none;
-    animation: ambientFloat 16s ease-in-out infinite reverse;
 }
 
 .skills-grid {
@@ -737,32 +697,11 @@ section { padding: 110px 0; }
    PROJECTS
    ===================================================== */
 .projects {
-    background: var(--bg-card);
+    background:
+        radial-gradient(ellipse at 100% 0%,   rgba(14,165,233,0.10) 0%, transparent 45%),
+        radial-gradient(ellipse at 0%   100%, rgba(168,85,247,0.08) 0%, transparent 45%),
+        #ffffff;
     position: relative;
-    overflow: hidden;
-}
-.projects::before {
-    content: '';
-    position: absolute;
-    top: -100px; right: -120px;
-    width: 650px; height: 650px;
-    background: radial-gradient(ellipse,
-        rgba(14,165,233,0.07) 0%,
-        rgba(79,91,213,0.05) 45%,
-        transparent 70%);
-    border-radius: 50%;
-    pointer-events: none;
-    animation: ambientFloat 22s ease-in-out infinite;
-}
-.projects::after {
-    content: '';
-    position: absolute;
-    bottom: -60px; left: -100px;
-    width: 500px; height: 500px;
-    background: radial-gradient(ellipse, rgba(168,85,247,0.05) 0%, transparent 70%);
-    border-radius: 50%;
-    pointer-events: none;
-    animation: ambientFloat 17s ease-in-out infinite reverse;
 }
 
 .projects-grid {
@@ -875,23 +814,12 @@ section { padding: 110px 0; }
    CERTIFICATIONS
    ===================================================== */
 .certifications {
-    background: var(--bg-section);
+    background:
+        radial-gradient(ellipse at 50%  0%,   rgba(79,91,213,0.09)  0%, transparent 50%),
+        radial-gradient(ellipse at 100% 100%, rgba(168,85,247,0.08) 0%, transparent 45%),
+        radial-gradient(ellipse at 0%   100%, rgba(14,165,233,0.08) 0%, transparent 45%),
+        var(--bg-section);
     position: relative;
-    overflow: hidden;
-}
-.certifications::before {
-    content: '';
-    position: absolute;
-    top: 50%; left: 50%;
-    transform: translate(-50%, -50%);
-    width: 800px; height: 500px;
-    background: radial-gradient(ellipse,
-        rgba(79,91,213,0.06) 0%,
-        rgba(168,85,247,0.04) 40%,
-        transparent 70%);
-    border-radius: 50%;
-    pointer-events: none;
-    animation: ambientFloat 25s ease-in-out infinite;
 }
 
 .certs-grid {
@@ -948,32 +876,12 @@ section { padding: 110px 0; }
    CONTACT
    ===================================================== */
 .contact {
-    background: var(--bg-card);
+    background:
+        radial-gradient(ellipse at 0%   0%,   rgba(79,91,213,0.10)  0%, transparent 45%),
+        radial-gradient(ellipse at 100% 100%, rgba(14,165,233,0.09)  0%, transparent 45%),
+        radial-gradient(ellipse at 80%  20%,  rgba(168,85,247,0.07) 0%, transparent 40%),
+        #ffffff;
     position: relative;
-    overflow: hidden;
-}
-.contact::before {
-    content: '';
-    position: absolute;
-    top: -80px; left: -80px;
-    width: 600px; height: 600px;
-    background: radial-gradient(ellipse,
-        rgba(79,91,213,0.07) 0%,
-        rgba(14,165,233,0.05) 40%,
-        transparent 70%);
-    border-radius: 50%;
-    pointer-events: none;
-    animation: ambientFloat 19s ease-in-out infinite;
-}
-.contact::after {
-    content: '';
-    position: absolute;
-    bottom: -100px; right: -80px;
-    width: 500px; height: 500px;
-    background: radial-gradient(ellipse, rgba(168,85,247,0.06) 0%, transparent 70%);
-    border-radius: 50%;
-    pointer-events: none;
-    animation: ambientFloat 23s ease-in-out infinite reverse;
 }
 
 .contact-grid {
