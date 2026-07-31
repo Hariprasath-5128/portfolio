@@ -2,12 +2,16 @@
 // TYPED TEXT EFFECT
 // =====================================================
 const roles = [
-    'AI & ML Engineer',
-    'Computer Vision Enthusiast',
-    'LLM Fine-Tuning Specialist',
-    'Kubernetes & Cloud Native Dev',
-    'Data Science Practitioner',
-    'AI Enthusiastic Researcher'
+    'AI & Machine Learning Engineer',
+    'Generative AI & LLM Developer',
+    'AI Research Enthusiast',
+    'Machine Learning & GenAI Developer',
+    'AI Systems Developer',
+    'LLM & RAG Developer',
+    'Cloud & AI Engineer',
+    'AI & Cloud Computing Enthusiast',
+    'Machine Learning Researcher',
+    'Applied AI Developer'
 ];
 let roleIdx = 0, charIdx = 0, deleting = false;
 const typedEl = document.getElementById('typedText');
