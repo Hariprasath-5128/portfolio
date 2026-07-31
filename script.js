@@ -97,16 +97,28 @@ window.addEventListener('scroll', setActiveLink, { passive: true });
 window.addEventListener('load',   setActiveLink);
 
 // =====================================================
-// INTERSECTION OBSERVER – SCROLL ANIMATIONS
+// INTERSECTION OBSERVER – SCROLL ANIMATIONS (staggered)
 // =====================================================
+const observerConfig = { threshold: 0.12, rootMargin: '0px 0px -50px 0px' };
+
 const observer = new IntersectionObserver(entries => {
     entries.forEach(entry => {
-        if (entry.isIntersecting) {
-            entry.target.classList.add('animated');
-            observer.unobserve(entry.target);
+        if (!entry.isIntersecting) return;
+
+        const el = entry.target;
+        const group = el.closest('.projects-grid, .skills-grid, .certs-grid, .stats-row, .hero-social, .hero-cta');
+
+        if (group) {
+            // stagger siblings inside the same grid/group
+            const siblings = Array.from(group.querySelectorAll('[data-animate]'));
+            const idx = siblings.indexOf(el);
+            el.style.transitionDelay = `${idx * 90}ms`;
         }
+
+        el.classList.add('animated');
+        observer.unobserve(el);
     });
-}, { threshold: 0.1, rootMargin: '0px 0px -60px 0px' });
+}, observerConfig);
 
 document.querySelectorAll('[data-animate]').forEach(el => observer.observe(el));
 

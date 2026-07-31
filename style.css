@@ -2,19 +2,21 @@
    DESIGN TOKENS – Light Theme
    ===================================================== */
 :root {
-    --bg-base:      #f7f8fc;
+    --bg-base:      #f4f6fb;
     --bg-card:      #ffffff;
     --bg-section:   #eef1f8;
     --bg-glass:     rgba(255,255,255,0.7);
     --bg-glass-hov: rgba(255,255,255,0.95);
-    --border:       rgba(0,0,0,0.08);
+    --border:       rgba(0,0,0,0.07);
     --border-hov:   rgba(79,91,213,0.35);
 
-    --accent-1:  #4f5bd5;   /* indigo */
-    --accent-2:  #6366f1;   /* violet */
-    --accent-3:  #0ea5e9;   /* sky */
+    --accent-1:  #4f5bd5;
+    --accent-2:  #6366f1;
+    --accent-3:  #0ea5e9;
+    --accent-4:  #a855f7;
     --grad:      linear-gradient(135deg, #4f5bd5 0%, #0ea5e9 100%);
     --grad-text: linear-gradient(135deg, #4f5bd5 0%, #0ea5e9 100%);
+    --grad-warm: linear-gradient(135deg, #a855f7 0%, #4f5bd5 50%, #0ea5e9 100%);
 
     --text-primary:   #1a1f36;
     --text-secondary: #4a5568;
@@ -31,6 +33,12 @@
     --shadow-sm: 0 2px 8px rgba(0,0,0,0.06);
     --shadow-md: 0 6px 24px rgba(0,0,0,0.09);
     --shadow-lg: 0 16px 48px rgba(0,0,0,0.12);
+
+    /* animation durations */
+    --t-fast:   0.25s;
+    --t-med:    0.5s;
+    --t-slow:   0.8s;
+    --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
 }
 
 /* =====================================================
@@ -425,6 +433,17 @@ img { display: block; max-width: 100%; }
     0%   { opacity:1; transform: translateY(0); }
     100% { opacity:0; transform: translateY(14px); }
 }
+@keyframes ambientFloat {
+    0%   { transform: translate(0, 0)    scale(1); }
+    25%  { transform: translate(30px, -20px) scale(1.04); }
+    50%  { transform: translate(-15px, 30px)  scale(0.97); }
+    75%  { transform: translate(20px, 10px)  scale(1.02); }
+    100% { transform: translate(0, 0)    scale(1); }
+}
+@keyframes shimmer {
+    0%   { background-position: -200% center; }
+    100% { background-position:  200% center; }
+}
 
 /* =====================================================
    SECTION COMMONS
@@ -457,18 +476,64 @@ section { padding: 110px 0; }
     margin: 12px auto 0;
 }
 
-/* scroll animations */
-[data-animate] { opacity: 0; transform: translateY(30px); transition: opacity 0.7s ease, transform 0.7s ease; }
-[data-animate].animated { opacity: 1; transform: none; }
-[data-animate="fade-right"] { transform: translateX(-40px); }
-[data-animate="fade-right"].animated { transform: none; }
-[data-animate="fade-left"] { transform: translateX(40px); }
-[data-animate="fade-left"].animated { transform: none; }
+/* scroll animations – base */
+[data-animate] {
+    opacity: 0;
+    transform: translateY(40px);
+    filter: blur(4px);
+    transition:
+        opacity   var(--t-slow) var(--ease-out),
+        transform var(--t-slow) var(--ease-out),
+        filter    var(--t-slow) var(--ease-out);
+}
+[data-animate].animated {
+    opacity: 1;
+    transform: none;
+    filter: blur(0);
+}
+[data-animate="fade-right"] { transform: translateX(-50px); filter: blur(4px); }
+[data-animate="fade-right"].animated { transform: none; filter: blur(0); }
+[data-animate="fade-left"]  { transform: translateX(50px);  filter: blur(4px); }
+[data-animate="fade-left"].animated  { transform: none; filter: blur(0); }
+[data-animate="zoom-in"] { transform: scale(0.88); filter: blur(6px); }
+[data-animate="zoom-in"].animated { transform: scale(1); filter: blur(0); }
+
+/* stagger children */
+[data-animate].animated:nth-child(1)  { transition-delay: 0ms; }
+[data-animate].animated:nth-child(2)  { transition-delay: 80ms; }
+[data-animate].animated:nth-child(3)  { transition-delay: 160ms; }
+[data-animate].animated:nth-child(4)  { transition-delay: 240ms; }
+[data-animate].animated:nth-child(5)  { transition-delay: 320ms; }
+[data-animate].animated:nth-child(6)  { transition-delay: 400ms; }
 
 /* =====================================================
    ABOUT
    ===================================================== */
-.about { background: var(--bg-card); }
+.about {
+    background: var(--bg-card);
+    position: relative;
+    overflow: hidden;
+}
+.about::before {
+    content: '';
+    position: absolute;
+    top: -120px; right: -100px;
+    width: 600px; height: 600px;
+    background: radial-gradient(ellipse, rgba(79,91,213,0.07) 0%, transparent 70%);
+    border-radius: 50%;
+    pointer-events: none;
+    animation: ambientFloat 14s ease-in-out infinite;
+}
+.about::after {
+    content: '';
+    position: absolute;
+    bottom: -100px; left: -80px;
+    width: 500px; height: 500px;
+    background: radial-gradient(ellipse, rgba(14,165,233,0.06) 0%, transparent 70%);
+    border-radius: 50%;
+    pointer-events: none;
+    animation: ambientFloat 18s ease-in-out infinite reverse;
+}
 
 .about-grid {
     display: grid;
@@ -569,7 +634,35 @@ section { padding: 110px 0; }
 /* =====================================================
    SKILLS
    ===================================================== */
-.skills { background: var(--bg-section); }
+.skills {
+    background: var(--bg-section);
+    position: relative;
+    overflow: hidden;
+}
+.skills::before {
+    content: '';
+    position: absolute;
+    top: 50%; left: -150px;
+    transform: translateY(-50%);
+    width: 700px; height: 700px;
+    background: radial-gradient(ellipse,
+        rgba(168,85,247,0.06) 0%,
+        rgba(79,91,213,0.05) 40%,
+        transparent 70%);
+    border-radius: 50%;
+    pointer-events: none;
+    animation: ambientFloat 20s ease-in-out infinite;
+}
+.skills::after {
+    content: '';
+    position: absolute;
+    bottom: -80px; right: -80px;
+    width: 450px; height: 450px;
+    background: radial-gradient(ellipse, rgba(14,165,233,0.07) 0%, transparent 70%);
+    border-radius: 50%;
+    pointer-events: none;
+    animation: ambientFloat 16s ease-in-out infinite reverse;
+}
 
 .skills-grid {
     display: grid;
@@ -643,7 +736,34 @@ section { padding: 110px 0; }
 /* =====================================================
    PROJECTS
    ===================================================== */
-.projects { background: var(--bg-card); }
+.projects {
+    background: var(--bg-card);
+    position: relative;
+    overflow: hidden;
+}
+.projects::before {
+    content: '';
+    position: absolute;
+    top: -100px; right: -120px;
+    width: 650px; height: 650px;
+    background: radial-gradient(ellipse,
+        rgba(14,165,233,0.07) 0%,
+        rgba(79,91,213,0.05) 45%,
+        transparent 70%);
+    border-radius: 50%;
+    pointer-events: none;
+    animation: ambientFloat 22s ease-in-out infinite;
+}
+.projects::after {
+    content: '';
+    position: absolute;
+    bottom: -60px; left: -100px;
+    width: 500px; height: 500px;
+    background: radial-gradient(ellipse, rgba(168,85,247,0.05) 0%, transparent 70%);
+    border-radius: 50%;
+    pointer-events: none;
+    animation: ambientFloat 17s ease-in-out infinite reverse;
+}
 
 .projects-grid {
     display: grid;
@@ -754,7 +874,25 @@ section { padding: 110px 0; }
 /* =====================================================
    CERTIFICATIONS
    ===================================================== */
-.certifications { background: var(--bg-section); }
+.certifications {
+    background: var(--bg-section);
+    position: relative;
+    overflow: hidden;
+}
+.certifications::before {
+    content: '';
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    width: 800px; height: 500px;
+    background: radial-gradient(ellipse,
+        rgba(79,91,213,0.06) 0%,
+        rgba(168,85,247,0.04) 40%,
+        transparent 70%);
+    border-radius: 50%;
+    pointer-events: none;
+    animation: ambientFloat 25s ease-in-out infinite;
+}
 
 .certs-grid {
     display: grid;
@@ -809,7 +947,34 @@ section { padding: 110px 0; }
 /* =====================================================
    CONTACT
    ===================================================== */
-.contact { background: var(--bg-card); }
+.contact {
+    background: var(--bg-card);
+    position: relative;
+    overflow: hidden;
+}
+.contact::before {
+    content: '';
+    position: absolute;
+    top: -80px; left: -80px;
+    width: 600px; height: 600px;
+    background: radial-gradient(ellipse,
+        rgba(79,91,213,0.07) 0%,
+        rgba(14,165,233,0.05) 40%,
+        transparent 70%);
+    border-radius: 50%;
+    pointer-events: none;
+    animation: ambientFloat 19s ease-in-out infinite;
+}
+.contact::after {
+    content: '';
+    position: absolute;
+    bottom: -100px; right: -80px;
+    width: 500px; height: 500px;
+    background: radial-gradient(ellipse, rgba(168,85,247,0.06) 0%, transparent 70%);
+    border-radius: 50%;
+    pointer-events: none;
+    animation: ambientFloat 23s ease-in-out infinite reverse;
+}
 
 .contact-grid {
     display: grid;
