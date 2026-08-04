@@ -1,465 +1,740 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-color-mode="dark">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Hariprasath M – AI & Machine Learning Engineer | B.Tech CSE at VIT Chennai | Building intelligent systems with LLMs, Computer Vision & Kubernetes.">
-    <meta name="keywords" content="Hariprasath, AI Engineer, Machine Learning, VIT Chennai, IITM, Portfolio, Python, LLM, Computer Vision">
-    <title>Hariprasath M | AI Engineer Portfolio</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Hariprasath M – AI Research Engineer | B.Tech CSE at VIT Chennai | Published researcher in LLMs, Computer Vision & Cloud-Native AI.">
+  <meta name="keywords" content="Hariprasath, AI Engineer, Machine Learning, VIT Chennai, IITM, Portfolio, Python, LLM, Computer Vision">
+  <meta property="og:title" content="Hariprasath M · AI Research Engineer Portfolio">
+  <meta property="og:description" content="AI Research Engineer building intelligent systems with LLMs, Computer Vision & Kubernetes.">
+  <title>Hariprasath M · AI Research Engineer Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- ==================== NAVIGATION ==================== -->
-    <nav id="navbar">
-        <div class="nav-container">
-            <a href="#home" class="logo">Hariprasath M</a>
-            <ul class="nav-menu" id="navMenu">
-                <li><a href="#home"          class="nav-link active">Home</a></li>
-                <li><a href="#about"         class="nav-link">About</a></li>
-                <li><a href="#skills"        class="nav-link">Skills</a></li>
-                <li><a href="#projects"      class="nav-link">Projects</a></li>
-                <li><a href="#certifications" class="nav-link">Certs</a></li>
-                <li><a href="#contact"       class="nav-link">Contact</a></li>
+
+  <!-- ==================== NAVIGATION ==================== -->
+  <nav id="navbar" role="banner">
+    <div class="nav-inner">
+      <a href="#home" class="nav-logo" aria-label="Hariprasath M Homepage" style="text-decoration: none;">
+        <span class="nav-name" style="background: linear-gradient(90deg, #0ea5e9, #8b5cf6); -webkit-background-clip: text; -webkit-text-fill-color: transparent; font-size: 24px; font-weight: 900; letter-spacing: -0.5px;">Hariprasath M</span>
+      </a>
+      <ul class="nav-links" id="navLinks" role="list">
+        <li><a href="#home"           class="nav-link active" id="nl-home">Home <svg class="nav-chevron" width="12" height="12" viewBox="0 0 16 16"><path fill="currentColor" d="m4.427 7.427 3.396 3.396a.25.25 0 0 0 .354 0l3.396-3.396A.25.25 0 0 0 11.396 7H4.604a.25.25 0 0 0-.177.427Z"></path></svg></a></li>
+        <li><a href="#about"          class="nav-link"        id="nl-about">Genesis <svg class="nav-chevron" width="12" height="12" viewBox="0 0 16 16"><path fill="currentColor" d="m4.427 7.427 3.396 3.396a.25.25 0 0 0 .354 0l3.396-3.396A.25.25 0 0 0 11.396 7H4.604a.25.25 0 0 0-.177.427Z"></path></svg></a></li>
+        <li><a href="#stats-section"  class="nav-link"        id="nl-stats">Glance <svg class="nav-chevron" width="12" height="12" viewBox="0 0 16 16"><path fill="currentColor" d="m4.427 7.427 3.396 3.396a.25.25 0 0 0 .354 0l3.396-3.396A.25.25 0 0 0 11.396 7H4.604a.25.25 0 0 0-.177.427Z"></path></svg></a></li>
+        <li><a href="#skills"         class="nav-link"        id="nl-skills">Arsenal <svg class="nav-chevron" width="12" height="12" viewBox="0 0 16 16"><path fill="currentColor" d="m4.427 7.427 3.396 3.396a.25.25 0 0 0 .354 0l3.396-3.396A.25.25 0 0 0 11.396 7H4.604a.25.25 0 0 0-.177.427Z"></path></svg></a></li>
+        <li><a href="#publications"   class="nav-link"        id="nl-pubs">Research <svg class="nav-chevron" width="12" height="12" viewBox="0 0 16 16"><path fill="currentColor" d="m4.427 7.427 3.396 3.396a.25.25 0 0 0 .354 0l3.396-3.396A.25.25 0 0 0 11.396 7H4.604a.25.25 0 0 0-.177.427Z"></path></svg></a></li>
+        <li><a href="#projects"       class="nav-link"        id="nl-projects">Innovations <svg class="nav-chevron" width="12" height="12" viewBox="0 0 16 16"><path fill="currentColor" d="m4.427 7.427 3.396 3.396a.25.25 0 0 0 .354 0l3.396-3.396A.25.25 0 0 0 11.396 7H4.604a.25.25 0 0 0-.177.427Z"></path></svg></a></li>
+        <li><a href="#contact"        class="nav-link"        id="nl-contact">Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+        <a href="https://github.com/Hariprasath-5128" target="_blank" rel="noopener" class="nav-cta-ghost" id="nav-github-link">GitHub</a>
+        <a href="#contact" class="nav-cta-primary" id="nav-hire-btn">Hire Me</a>
+      </div>
+      <button class="hamburger" id="hamburger" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+  </nav>
+
+  <!-- ==================== HERO ==================== -->
+  <section id="home" class="hero">
+    <div class="hero-grid">
+      <!-- Left -->
+      <div class="hero-left">
+        <div class="section-eyebrow">
+          <span class="eyebrow-dot"></span>
+          Pre-Final Year Computer Science Student
+        </div>
+        <h1 class="hero-headline"><span style="color: #ffffff;">Hariprasath</span><br><span class="name-accent">M</span></h1>
+
+        <!-- Mobile IDE -->
+        <div class="hero-right-mobile">
+          <div class="ide-frame" id="ideMobileFrame">
+            <div class="ide-titlebar">
+              <span class="ide-dot red"></span><span class="ide-dot yellow"></span><span class="ide-dot green"></span>
+              <span class="ide-title">portfolio.py</span>
+            </div>
+            <div class="ide-body">
+              <img src="image.png" alt="Hariprasath M" class="hero-profile-img" id="heroProfileImgMobile" loading="lazy">
+            </div>
+          </div>
+        </div>
+
+        <p class="hero-sub" style="font-size: 20px; font-weight: 500; min-height: 30px; display: flex; align-items: center;">
+          I am an <span class="typing-text" style="color: var(--accent-green); margin-left: 6px;"></span><span class="cursor" style="display:inline-block; width:2px; height:1em; background:var(--accent-green); margin-left:2px; animation: blink 1s step-end infinite; vertical-align: middle;">&nbsp;</span>
+        </p>
+
+        <div class="hero-ctas">
+          <a href="#projects" class="btn-primary" id="hero-view-projects">View Projects</a>
+          <a href="#contact"  class="btn-ghost"   id="hero-contact-me">Get in Touch</a>
+        </div>
+
+        <!-- Social Icons -->
+        <div class="hero-socials">
+          <a href="https://github.com/Hariprasath-5128" target="_blank" rel="noopener" class="social-icon-btn" id="hero-gh" aria-label="GitHub">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2Z"/></svg>
+            GitHub
+          </a>
+          <a href="https://www.linkedin.com/in/hari-prasath-m-5128-/" target="_blank" rel="noopener" class="social-icon-btn" id="hero-li" aria-label="LinkedIn">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="#0A66C2"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+            LinkedIn
+          </a>
+          <a href="https://leetcode.com/u/Hariprasath5128/" target="_blank" rel="noopener" class="social-icon-btn" id="hero-lc" aria-label="LeetCode">
+            <svg width="18" height="18" viewBox="0 0 94 111" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M67.5068339,83.0664138 C70.0005384,80.5763786 74.0371402,80.5828822 76.5228362,83.0809398 C79.0085322,85.5789975 79.00204,89.6226456 76.5083355,92.1126808 L65.4351451,103.169577 C55.2192332,113.370744 38.5604663,113.518673 28.1722578,103.513204 C28.112217,103.455678 23.486583,98.9201326 8.22702585,83.9570195 C-1.92478479,74.0028895 -2.93614945,58.0748736 6.61697549,47.8463644 L24.4286944,28.7745461 C33.9100043,18.6218594 51.3874487,17.5122246 62.2279907,26.2789232 L78.4052912,39.3620235 C81.1448956,41.5776292 81.5728103,45.5984975 79.3610655,48.3428842 C77.1493207,51.0872709 73.1354592,51.5159327 70.3958548,49.300327 L54.2186634,36.2173149 C48.5492813,31.6325105 38.631911,32.2621597 33.7398535,37.5006265 L15.9279056,56.5726899 C11.2772073,61.552182 11.7865613,69.5740156 17.1461283,74.8292186 C28.3515339,85.8169393 36.9874071,94.2846214 36.9973988,94.294225 C42.3981571,99.4959838 51.130862,99.418438 56.43358,94.1233737 L67.5068339,83.0664138 Z" fill="#FFA116"/>
+              <path d="M40.6069914,72.0014117 C37.086019,72.0014117 34.2317068,69.142117 34.2317068,65.6149982 C34.2317068,62.0878794 37.086019,59.2285847 40.6069914,59.2285847 L87.6247154,59.2285847 C91.1456879,59.2285847 94,62.0878794 94,65.6149982 C94,69.142117 91.1456879,72.0014117 87.6247154,72.0014117 L40.6069914,72.0014117 Z" fill="#B3B3B3"/>
+              <path d="M49.4124315,2.02335002 C51.8178981,-0.552320454 55.852269,-0.686893945 58.4234511,1.72277172 C60.9946333,4.13243738 61.1289722,8.17385083 58.7235056,10.7495213 L15.9282277,56.5728697 C11.2773659,61.551984 11.7867168,69.5737689 17.1459309,74.8291832 L36.9094236,94.2091099 C39.4255514,96.6764051 39.4686234,100.719828 37.0056277,103.240348 C34.5426319,105.760868 30.5062548,105.804016 27.990127,103.33672 L8.22654289,83.9567041 C-1.92467414,74.0021005 -2.93603527,58.0741402 6.61751533,47.846311 L49.4124315,2.02335002 Z" fill="#e6edf3"/>
+            </svg>
+            LeetCode
+          </a>
+        </div>
+
+        <p class="hero-note">Open to internships &amp; research roles. <a href="https://www.linkedin.com/in/hari-prasath-m-5128-/" target="_blank" rel="noopener" id="hero-linkedin-link">Connect on LinkedIn →</a></p>
+      </div>
+
+      <!-- Right: IDE Frame -->
+      <div class="hero-right-desktop">
+        <div class="ide-frame" id="ideDesktopFrame">
+          <div class="ide-titlebar">
+            <span class="ide-dot red"></span><span class="ide-dot yellow"></span><span class="ide-dot green"></span>
+            <span class="ide-title" id="ideCurrentFile">portfolio.py</span>
+            <span class="ide-badge">AI Research Engineer</span>
+          </div>
+          <div class="ide-body">
+            <div class="ide-sidebar">
+              <div class="ide-file active" data-file="portfolio" id="file-portfolio" tabindex="0" role="button" aria-label="View portfolio.py">
+                <svg width="12" height="12" viewBox="0 0 16 16" fill="#3fb950"><path d="M2 2.5A2.5 2.5 0 0 1 4.5 0h8.75a.75.75 0 0 1 .75.75v12.5a.75.75 0 0 1-.75.75h-2.5a.75.75 0 0 1 0-1.5H12v-2h-8a1 1 0 0 0-.717 1.7.75.75 0 1 1-1.051 1.069A2.5 2.5 0 0 1 2 13.5Z"/></svg>
+                portfolio.py
+              </div>
+              <div class="ide-file" data-file="projects" id="file-projects" tabindex="0" role="button" aria-label="View projects.json">
+                <svg width="12" height="12" viewBox="0 0 16 16" fill="#e3b341"><path d="M2 2.5A2.5 2.5 0 0 1 4.5 0h8.75a.75.75 0 0 1 .75.75v12.5a.75.75 0 0 1-.75.75h-2.5a.75.75 0 0 1 0-1.5H12v-2h-8a1 1 0 0 0-.717 1.7.75.75 0 1 1-1.051 1.069A2.5 2.5 0 0 1 2 13.5Z"/></svg>
+                projects.json
+              </div>
+              <div class="ide-file" data-file="skills" id="file-skills" tabindex="0" role="button" aria-label="View skills.yaml">
+                <svg width="12" height="12" viewBox="0 0 16 16" fill="#58a6ff"><path d="M2 2.5A2.5 2.5 0 0 1 4.5 0h8.75a.75.75 0 0 1 .75.75v12.5a.75.75 0 0 1-.75.75h-2.5a.75.75 0 0 1 0-1.5H12v-2h-8a1 1 0 0 0-.717 1.7.75.75 0 1 1-1.051 1.069A2.5 2.5 0 0 1 2 13.5Z"/></svg>
+                skills.yaml
+              </div>
+            </div>
+
+            <!-- Editor panels -->
+            <div class="ide-editor">
+              <!-- Panel: portfolio.py (profile image) -->
+              <div class="ide-panel active" id="panel-portfolio">
+                <img src="image.png" alt="Hariprasath M at VIT Chennai podium" class="hero-profile-img" id="heroProfileImg" loading="eager">
+
+              </div>
+
+              <!-- Panel: projects.json -->
+              <div class="ide-panel" id="panel-projects">
+                <div class="code-viewer" aria-label="projects.json content">
+                  <pre class="code-block"><span class="c-bracket">{</span>
+  <span class="c-key">"github_repositories"</span><span class="c-punct">:</span> <span class="c-bracket">[</span>
+    <span class="c-bracket">{</span>
+      <span class="c-key">"name"</span><span class="c-punct">:</span> <span class="c-str">"SERA"</span><span class="c-punct">,</span>
+      <span class="c-key">"domain"</span><span class="c-punct">:</span> <span class="c-str">"Adaptive RAG"</span><span class="c-punct">,</span>
+      <span class="c-key">"description"</span><span class="c-punct">:</span> <span class="c-str">"Self-Evolving Retrieval-Augmented Generation"</span><span class="c-punct">,</span>
+      <span class="c-key">"technologies"</span><span class="c-punct">:</span> <span class="c-bracket">[</span><span class="c-str">"Vector DBs"</span><span class="c-punct">,</span> <span class="c-str">"ChromaDB"</span><span class="c-punct">,</span> <span class="c-str">"FastAPI"</span><span class="c-bracket">]</span>
+    <span class="c-bracket">}</span><span class="c-punct">,</span>
+    <span class="c-bracket">{</span>
+      <span class="c-key">"name"</span><span class="c-punct">:</span> <span class="c-str">"Syntax-AI"</span><span class="c-punct">,</span>
+      <span class="c-key">"domain"</span><span class="c-punct">:</span> <span class="c-str">"AI Agents"</span><span class="c-punct">,</span>
+      <span class="c-key">"description"</span><span class="c-punct">:</span> <span class="c-str">"Autonomous AI-Based Code Refactoring Tool"</span><span class="c-punct">,</span>
+      <span class="c-key">"technologies"</span><span class="c-punct">:</span> <span class="c-bracket">[</span><span class="c-str">"Python"</span><span class="c-punct">,</span> <span class="c-str">"LLMs"</span><span class="c-punct">,</span> <span class="c-str">"SQL Backend"</span><span class="c-bracket">]</span>
+    <span class="c-bracket">}</span><span class="c-punct">,</span>
+    <span class="c-bracket">{</span>
+      <span class="c-key">"name"</span><span class="c-punct">:</span> <span class="c-str">"k8s-ai-self-healing-autoscaler"</span><span class="c-punct">,</span>
+      <span class="c-key">"domain"</span><span class="c-punct">:</span> <span class="c-str">"Cloud Native AI"</span><span class="c-punct">,</span>
+      <span class="c-key">"technologies"</span><span class="c-punct">:</span> <span class="c-bracket">[</span><span class="c-str">"Kubernetes"</span><span class="c-punct">,</span> <span class="c-str">"Docker"</span><span class="c-punct">,</span> <span class="c-str">"Minikube"</span><span class="c-bracket">]</span><span class="c-punct">,</span>
+      <span class="c-key">"impact"</span><span class="c-punct">:</span> <span class="c-str">"Dynamic workload prioritization"</span>
+    <span class="c-bracket">}</span><span class="c-punct">,</span>
+    <span class="c-bracket">{</span>
+      <span class="c-key">"name"</span><span class="c-punct">:</span> <span class="c-str">"Multimodal_marine"</span><span class="c-punct">,</span>
+      <span class="c-key">"domain"</span><span class="c-punct">:</span> <span class="c-str">"Multimodal AI"</span><span class="c-punct">,</span>
+      <span class="c-key">"architecture"</span><span class="c-punct">:</span> <span class="c-str">"Integrated LLM, LVM, and LAM components"</span>
+    <span class="c-bracket">}</span><span class="c-punct">,</span>
+    <span class="c-bracket">{</span>
+      <span class="c-key">"name"</span><span class="c-punct">:</span> <span class="c-str">"Plant_Monitoring_VIT"</span><span class="c-punct">,</span>
+      <span class="c-key">"domain"</span><span class="c-punct">:</span> <span class="c-str">"Computer Vision / IoT"</span><span class="c-punct">,</span>
+      <span class="c-key">"accuracy"</span><span class="c-punct">:</span> <span class="c-str">"80% real-time disease detection"</span>
+    <span class="c-bracket">}</span>
+  <span class="c-bracket">]</span>
+<span class="c-bracket">}</span></pre>
+                </div>
+              </div>
+
+              <!-- Panel: skills.yaml -->
+              <div class="ide-panel" id="panel-skills">
+                <div class="code-viewer" aria-label="skills.yaml content">
+                  <pre class="code-block"><span class="c-key">name</span><span class="c-punct">:</span> <span class="c-str">Hariprasath M</span>
+<span class="c-key">role</span><span class="c-punct">:</span> <span class="c-str">AI Research Engineer</span>
+<span class="c-key">education</span><span class="c-punct">:</span>
+  <span class="c-key">degree1</span><span class="c-punct">:</span> <span class="c-str">B.Tech CSE, VIT Chennai (9.72 CGPA)</span>
+  <span class="c-key">degree2</span><span class="c-punct">:</span> <span class="c-str">B.S. Data Science, IIT Madras</span>
+
+<span class="c-key">problem_solving</span><span class="c-punct">:</span>
+  <span class="c-key">leetcode</span><span class="c-punct">:</span> <span class="c-str">250+ Problems Solved</span>
+  <span class="c-key">focus</span><span class="c-punct">:</span> <span class="c-str">Data Structures, Algorithms, System Design</span>
+
+<span class="c-key">languages</span><span class="c-punct">:</span>
+  - <span class="c-str">Python</span>    <span class="c-comment"># Expert</span>
+  - <span class="c-str">C / C++</span>
+  - <span class="c-str">Java</span>
+  - <span class="c-str">R</span>
+  - <span class="c-str">SQL</span>
+  - <span class="c-str">HTML / CSS / JS</span>
+
+<span class="c-key">ai_ml</span><span class="c-punct">:</span>
+  <span class="c-key">frameworks</span><span class="c-punct">:</span>
+    - <span class="c-str">PyTorch</span>
+    - <span class="c-str">TensorFlow</span>
+    - <span class="c-str">HuggingFace Transformers</span>
+    - <span class="c-str">Scikit-learn</span>
+    - <span class="c-str">LangChain</span>
+  <span class="c-key">techniques</span><span class="c-punct">:</span>
+    - <span class="c-str">LoRA / PEFT Fine-Tuning</span>
+    - <span class="c-str">Vision Transformers (ViT)</span>
+    - <span class="c-str">Multimodal AI (LLM+LVM+LAM)</span>
+    - <span class="c-str">Adaptive RAG / Vector DBs</span>
+    - <span class="c-str">Deep Reinforcement Learning</span>
+
+<span class="c-key">cloud_devops</span><span class="c-punct">:</span>
+  - <span class="c-str">Google Cloud Platform (GCP)</span> <span class="c-comment"># ACE Certified</span>
+  - <span class="c-str">AWS Services</span>
+  - <span class="c-str">Kubernetes & Minikube</span>
+  - <span class="c-str">Docker & Containerization</span>
+  - <span class="c-str">FastAPI</span>
+  - <span class="c-str">Linux / Bash Scripting</span>
+
+<span class="c-key">status</span><span class="c-punct">:</span> <span class="c-str">Available for Internships & Research Collaborations</span></pre>
+                </div>
+              </div>
+            </div><!-- /ide-editor -->
+          </div><!-- /ide-body -->
+        </div><!-- /ide-frame -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== ABOUT / SUMMARY ==================== -->
+  <section id="about" class="section-block section-alt">
+    <div class="section-container">
+      <div class="section-eyebrow-center" data-animate="fade-up"><span class="eyebrow-dot"></span> ABOUT ME</div>
+      <h2 class="section-headline" data-animate="fade-up">My Genesis</h2>
+      <p class="section-sub" data-animate="fade-up">Driven by a passion for building scalable, intelligent systems and optimizing real-world architectures.</p>
+      
+      <div class="features-grid-3" role="list">
+        <div class="feat-card" role="listitem" data-animate="fade-up">
+          <div class="feat-icon-box">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#3fb950" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+          </div>
+          <h3>Research-first mindset</h3>
+          <p>Published AI research with Frontiers in AI — pushing LLM fine-tuning with LoRA-based PEFT for medical query understanding.</p>
+        </div>
+        <div class="feat-card" role="listitem" data-animate="fade-up">
+          <div class="feat-icon-box">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#3fb950" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+          </div>
+          <h3>Algorithmic Problem Solving</h3>
+          <p>250+ LeetCode problems solved. Strong foundation in competitive programming, data structures, and algorithms to build highly efficient systems.</p>
+        </div>
+        <div class="feat-card" role="listitem" data-animate="fade-up">
+          <div class="feat-icon-box">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#3fb950" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+          </div>
+          <h3>End-to-End System Design</h3>
+          <p>Building scalable architectures from backend APIs and vector databases to Kubernetes deployments, ensuring high reliability in production.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== STATS CAROUSEL (AT A GLANCE) ==================== -->
+  <section class="stats-carousel-section" id="stats-section" aria-label="Key achievements">
+    <div class="stats-carousel-header">
+      <span class="stats-label">
+        <span class="eyebrow-dot"></span> AT A GLANCE
+      </span>
+      <div class="stats-nav-btns">
+        <button class="stats-nav-btn" id="statsPrev" aria-label="Previous stat">
+          <svg width="14" height="14" viewBox="0 0 16 16" fill="currentColor"><path d="M9.78 12.78a.75.75 0 0 1-1.06 0L4.47 8.53a.75.75 0 0 1 0-1.06l4.25-4.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042L6.06 8l3.72 3.72a.75.75 0 0 1 0 1.06Z"/></svg>
+        </button>
+        <button class="stats-nav-btn" id="statsNext" aria-label="Next stat">
+          <svg width="14" height="14" viewBox="0 0 16 16" fill="currentColor"><path d="M6.22 3.22a.75.75 0 0 1 1.06 0l4.25 4.25a.75.75 0 0 1 0 1.06l-4.25 4.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042L9.94 8 6.22 4.28a.75.75 0 0 1 0-1.06Z"/></svg>
+        </button>
+      </div>
+    </div>
+    <div class="stats-carousel-track-wrapper">
+      <div class="stats-carousel-track" id="statsTrack">
+        <div class="stat-slide" data-index="0">
+          <div class="stat-slide-num">9.72</div>
+          <div class="stat-slide-lbl">CGPA</div>
+          <div class="stat-slide-sub">VIT Chennai</div>
+        </div>
+        <div class="stat-slide" data-index="1">
+          <div class="stat-slide-num">6+</div>
+          <div class="stat-slide-lbl">Projects</div>
+          <div class="stat-slide-sub">AI / ML Systems</div>
+        </div>
+        <div class="stat-slide" data-index="2">
+          <div class="stat-slide-num">3</div>
+          <div class="stat-slide-lbl">Certifications</div>
+          <div class="stat-slide-sub">Oracle · Google · GCP</div>
+        </div>
+        <div class="stat-slide" data-index="3">
+          <div class="stat-slide-num">2</div>
+          <div class="stat-slide-lbl">Degrees</div>
+          <div class="stat-slide-sub">VIT + IIT Madras</div>
+        </div>
+        <div class="stat-slide" data-index="4">
+          <div class="stat-slide-num">1</div>
+          <div class="stat-slide-lbl">Publication</div>
+          <div class="stat-slide-sub">Frontiers in AI</div>
+        </div>
+        <div class="stat-slide" data-index="5">
+          <div class="stat-slide-num">250+</div>
+          <div class="stat-slide-lbl">LeetCode</div>
+          <div class="stat-slide-sub">Problems Solved</div>
+        </div>
+      </div>
+    </div>
+    <div class="stats-carousel-dots" id="statsDots">
+      <button class="stat-dot active" data-dot="0" aria-label="Stat 1"></button>
+      <button class="stat-dot" data-dot="1" aria-label="Stat 2"></button>
+      <button class="stat-dot" data-dot="2" aria-label="Stat 3"></button>
+      <button class="stat-dot" data-dot="3" aria-label="Stat 4"></button>
+      <button class="stat-dot" data-dot="4" aria-label="Stat 5"></button>
+      <button class="stat-dot" data-dot="5" aria-label="Stat 6"></button>
+    </div>
+  </section>
+
+  <!-- ==================== SKILLS / TECHNICAL EXPERTISE ==================== -->
+  <section id="skills" class="section-block section-alt">
+    <div class="section-container">
+      <div class="section-eyebrow-center" data-animate="fade-up"><span class="eyebrow-dot"></span> TECHNICAL EXPERTISE</div>
+      <h2 class="section-headline" data-animate="fade-up">Arsenal of Skills</h2>
+      <p class="section-sub" data-animate="fade-up">A full-spectrum skillset across AI research, engineering, and cloud-native infrastructure.</p>
+      
+      <div class="skills-feature-grid enlarged-grid" data-animate="fade-up">
+        <div class="skill-feat-card" id="skill-programming">
+          <div class="skill-feat-top">
+            <div class="feat-icon-box">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" width="24" height="24" alt="Python">
+            </div>
+            <span class="skill-tag-label">Languages</span>
+          </div>
+          <h3>Programming</h3>
+          <p>Python, C, C++, Java, R, SQL, HTML/CSS</p>
+        </div>
+        
+        <div class="skill-feat-card" id="skill-aiml">
+          <div class="skill-feat-top">
+            <div class="feat-icon-box">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jupyter/jupyter-original.svg" width="24" height="24" alt="Jupyter">
+            </div>
+            <span class="skill-tag-label">AI / ML</span>
+          </div>
+          <h3>Machine Learning</h3>
+          <p>PyTorch, TensorFlow, HuggingFace, Scikit-learn, LoRA/PEFT, Deep Learning, RL</p>
+        </div>
+        
+        <div class="skill-feat-card" id="skill-vision">
+          <div class="skill-feat-top">
+            <div class="feat-icon-box">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/opencv/opencv-original.svg" width="24" height="24" alt="OpenCV">
+            </div>
+            <span class="skill-tag-label">Computer Vision</span>
+          </div>
+          <h3>Vision Systems</h3>
+          <p>OpenCV, Vision Transformer (ViT), Image Classification, ESP32-CAM, Object Detection</p>
+        </div>
+        
+        <div class="skill-feat-card" id="skill-devops">
+          <div class="skill-feat-top">
+            <div class="feat-icon-box">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" width="24" height="24" alt="Docker">
+            </div>
+            <span class="skill-tag-label">DevOps</span>
+          </div>
+          <h3>Tools &amp; Cloud</h3>
+          <p>Docker, Kubernetes, Minikube, GCP, AWS, Git, Linux, Jupyter, FastAPI</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== TECH STRIP (ROTATING LOGOS) ==================== -->
+  <div class="tech-strip-wrapper" aria-label="Technologies I work with">
+    <div class="tech-strip-content animate-marquee" id="techStripContent">
+      <div class="tech-strip-item" id="techStripItem">
+        <span class="tech-chip">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" width="22" height="22" alt="Python"> Python
+        </span>
+        <span class="tech-chip">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pytorch/pytorch-original.svg" width="22" height="22" alt="PyTorch"> PyTorch
+        </span>
+        <span class="tech-chip">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg" width="22" height="22" alt="TensorFlow"> TensorFlow
+        </span>
+        <span class="tech-chip">
+          <img src="https://huggingface.co/front/assets/huggingface_logo-noborder.svg" width="22" height="22" alt="HuggingFace"> HuggingFace
+        </span>
+        <span class="tech-chip">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" width="22" height="22" alt="Docker"> Docker
+        </span>
+        <span class="tech-chip">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kubernetes/kubernetes-plain.svg" width="22" height="22" alt="Kubernetes"> Kubernetes
+        </span>
+        <span class="tech-chip">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/fastapi/fastapi-original.svg" width="22" height="22" alt="FastAPI"> FastAPI
+        </span>
+        <span class="tech-chip">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original.svg" width="22" height="22" alt="Flask"> Flask
+        </span>
+        <span class="tech-chip">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/opencv/opencv-original.svg" width="22" height="22" alt="OpenCV"> OpenCV
+        </span>
+        <span class="tech-chip">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/googlecloud/googlecloud-original.svg" width="22" height="22" alt="GCP"> GCP
+        </span>
+        <span class="tech-chip">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-plain-wordmark.svg" width="22" height="22" alt="AWS"> AWS
+        </span>
+        <span class="tech-chip">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" width="22" height="22" alt="Git"> Git
+        </span>
+        <span class="tech-chip">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" width="22" height="22" alt="SQL"> SQL
+        </span>
+        <span class="tech-chip">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" width="22" height="22" alt="Linux"> Linux
+        </span>
+        <span class="tech-chip">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jupyter/jupyter-original.svg" width="22" height="22" alt="Jupyter"> Jupyter
+        </span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==================== PUBLICATIONS ==================== -->
+  <section id="publications" class="section-block">
+    <div class="section-container">
+      <div class="section-eyebrow-center" data-animate="fade-up"><span class="eyebrow-dot"></span> RESEARCH OUTPUT</div>
+      <h2 class="section-headline" data-animate="fade-up">Published Research</h2>
+      <p class="section-sub" data-animate="fade-up">Peer-reviewed contributions to the AI research community.</p>
+
+      <div class="pub-card" data-animate="fade-up">
+        <div class="pub-journal-badge">
+          <!-- Frontiers in AI logo -->
+          <img src="frontiers_logo.png" alt="Frontiers" width="70" style="border-radius: 4px;">
+          <span class="pub-journal-name" style="margin-top: 6px;">Frontiers in AI</span>
+        </div>
+        <div class="pub-body">
+          <span class="pub-category-label">LLM Fine-Tuning · Medical AI</span>
+          <h3 class="pub-title">Medical Query Understanding &amp; Recommendation System using LoRA-based PEFT</h3>
+          <p class="pub-abstract">Fine-tuned DeepSeek and LLaMA models using Low-Rank Adaptation (LoRA) with Parameter-Efficient Fine-Tuning (PEFT) and model merging techniques. Achieved a <strong>~70–80% performance improvement</strong> in analytical reasoning and medical dosage calculations over baseline models, demonstrating the practical efficacy of LoRA-based fine-tuning for domain-specific medical AI applications.</p>
+          <div class="pub-tags">
+            <span class="ptag">LLM Fine-Tuning</span>
+            <span class="ptag">LoRA</span>
+            <span class="ptag">PEFT</span>
+            <span class="ptag">PyTorch</span>
+            <span class="ptag">DeepSeek</span>
+            <span class="ptag">LLaMA</span>
+            <span class="ptag">Medical AI</span>
+          </div>
+          <div class="pub-footer">
+            <span class="pub-meta">Published · 2026 · DOI: 10.3389/frai.2026.1807268</span>
+            <a href="https://www.frontiersin.org/journals/artificial-intelligence/articles/10.3389/frai.2026.1807268/full" target="_blank" rel="noopener" class="btn-primary pub-link-btn" id="pub-read-paper">
+              Read Paper
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== PROJECTS ==================== -->
+  <section id="projects" class="section-block section-alt">
+    <div class="section-container">
+      <div class="section-eyebrow-center" data-animate="fade-up"><span class="eyebrow-dot"></span> PORTFOLIO</div>
+      <h2 class="section-headline" data-animate="fade-up">Hall of Innovations</h2>
+      <p class="section-sub" data-animate="fade-up">AI systems solving real problems — from production-grade deployments to Kubernetes-scale architectures.</p>
+      
+      <div class="projects-grid" data-animate="fade-up">
+        <!-- Project 1 -->
+        <div class="project-card" id="proj-01">
+          <div class="proj-top"><span class="proj-num">01</span><div class="proj-actions"><a href="https://github.com/Hariprasath-5128/Plant_Monitoring_VIT" target="_blank" rel="noopener" class="proj-icon-link proj-github-link" aria-label="View on GitHub"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2Z"/></svg></a></div></div>
+          <span class="proj-category-label">Computer Vision</span>
+          <h3>Real-Time Plant Disease Detection</h3>
+          <p>Real-time monitoring using ESP32-CAM and a 15M-parameter Vision Transformer fine-tuned on PlantVillage. ~80% accuracy with fertilizer recommendations.</p>
+          <div class="proj-tags"><span class="ptag">ViT</span><span class="ptag">ESP32-CAM</span><span class="ptag">IoT</span></div>
+          <button class="card-arrow proj-detail-btn" data-project="01" aria-label="View project details"><svg width="14" height="14" viewBox="0 0 16 16" fill="currentColor"><path d="M8.22 2.97a.75.75 0 0 1 1.06 0l4.25 4.25a.75.75 0 0 1 0 1.06l-4.25 4.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042L10.94 8 8.22 5.28a.75.75 0 0 1 0-1.06Z"/></svg></button>
+        </div>
+        <!-- Project 2 -->
+        <div class="project-card" id="proj-02">
+          <div class="proj-top"><span class="proj-num">02</span><div class="proj-actions"><a href="https://github.com/Hariprasath-5128/Syntax-AI" target="_blank" rel="noopener" class="proj-icon-link proj-github-link" aria-label="View on GitHub"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2Z"/></svg></a></div></div>
+          <span class="proj-category-label">AI Agents</span>
+          <h3>Syntax AI – Code Refactoring Tool</h3>
+          <p>AI-powered code refactoring, error detection, and automated code generation using Python AI agents with SQL backend and web interface.</p>
+          <div class="proj-tags"><span class="ptag">AI Agents</span><span class="ptag">Python</span><span class="ptag">SQL</span></div>
+          <button class="card-arrow proj-detail-btn" data-project="02" aria-label="View project details"><svg width="14" height="14" viewBox="0 0 16 16" fill="currentColor"><path d="M8.22 2.97a.75.75 0 0 1 1.06 0l4.25 4.25a.75.75 0 0 1 0 1.06l-4.25 4.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042L10.94 8 8.22 5.28a.75.75 0 0 1 0-1.06Z"/></svg></button>
+        </div>
+        <!-- Project 3 -->
+        <div class="project-card project-featured" id="proj-03">
+          <div class="proj-top"><span class="proj-num">03</span><div class="proj-actions"><span class="proj-badge-featured">★ Featured</span><a href="https://github.com/Hariprasath-5128/SERA" target="_blank" rel="noopener" class="proj-icon-link proj-github-link" aria-label="View on GitHub"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2Z"/></svg></a></div></div>
+          <span class="proj-category-label">Adaptive RAG</span>
+          <h3>SERA – Self-Evolving RAG Framework</h3>
+          <p>Intelligent RAG framework with adaptive retrieval, Super-Node synthesis, and validation-driven learning using local LLM inference and vector databases.</p>
+          <div class="proj-tags"><span class="ptag">RAG</span><span class="ptag">ChromaDB</span><span class="ptag">FastAPI</span></div>
+          <button class="card-arrow proj-detail-btn" data-project="03" aria-label="View project details"><svg width="14" height="14" viewBox="0 0 16 16" fill="currentColor"><path d="M8.22 2.97a.75.75 0 0 1 1.06 0l4.25 4.25a.75.75 0 0 1 0 1.06l-4.25 4.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042L10.94 8 8.22 5.28a.75.75 0 0 1 0-1.06Z"/></svg></button>
+        </div>
+        <!-- Project 4 -->
+        <div class="project-card project-featured" id="proj-04">
+          <div class="proj-top"><span class="proj-num">04</span><div class="proj-actions"><span class="proj-badge-featured">★ Featured</span><a href="https://github.com/Hariprasath-5128/Multimodal_marine" target="_blank" rel="noopener" class="proj-icon-link proj-github-link" aria-label="View on GitHub"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2Z"/></svg></a></div></div>
+          <span class="proj-category-label">Multimodal AI</span>
+          <h3>Multimodal Marine Species ID</h3>
+          <p>AI system identifying marine mammals using audio and image data. Integrates LLM, LVM, and LAM for cross-modal species recognition across aligned datasets.</p>
+          <div class="proj-tags"><span class="ptag">Multimodal</span><span class="ptag">Audio ML</span><span class="ptag">Computer Vision</span></div>
+          <button class="card-arrow proj-detail-btn" data-project="04" aria-label="View project details"><svg width="14" height="14" viewBox="0 0 16 16" fill="currentColor"><path d="M8.22 2.97a.75.75 0 0 1 1.06 0l4.25 4.25a.75.75 0 0 1 0 1.06l-4.25 4.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042L10.94 8 8.22 5.28a.75.75 0 0 1 0-1.06Z"/></svg></button>
+        </div>
+        <!-- Project 5 -->
+        <div class="project-card" id="proj-05">
+          <div class="proj-top"><span class="proj-num">05</span><div class="proj-actions"><a href="https://github.com/Hariprasath-5128/k8s-ai-self-healing-autoscaler" target="_blank" rel="noopener" class="proj-icon-link proj-github-link" aria-label="View on GitHub"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2Z"/></svg></a></div></div>
+          <span class="proj-category-label">Cloud Native AI</span>
+          <h3>AI Self-Healing Kubernetes Autoscaler</h3>
+          <p>AI-powered autoscaler dynamically prioritizing workloads using real-time CPU metrics with Docker, Minikube, and a custom AI prediction engine.</p>
+          <div class="proj-tags"><span class="ptag">Kubernetes</span><span class="ptag">Docker</span><span class="ptag">AI/ML</span></div>
+          <button class="card-arrow proj-detail-btn" data-project="05" aria-label="View project details"><svg width="14" height="14" viewBox="0 0 16 16" fill="currentColor"><path d="M8.22 2.97a.75.75 0 0 1 1.06 0l4.25 4.25a.75.75 0 0 1 0 1.06l-4.25 4.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042L10.94 8 8.22 5.28a.75.75 0 0 1 0-1.06Z"/></svg></button>
+        </div>
+        <!-- Project 6 (Now visible) -->
+        <div class="project-card" id="proj-06">
+          <div class="proj-top"><span class="proj-num">06</span><div class="proj-actions"><a href="https://github.com/Hariprasath-5128/Self-Evolving-Cryptographic-Primitives-with-DRL" target="_blank" rel="noopener" class="proj-icon-link proj-github-link" aria-label="View on GitHub"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2Z"/></svg></a></div></div>
+          <span class="proj-category-label">Reinforcement Learning</span>
+          <h3>Self-Evolving Cryptographic Primitives</h3>
+          <p>Reinforcement learning agents evolving cryptographic primitives dynamically based on environmental shifts and adversarial threats.</p>
+          <div class="proj-tags"><span class="ptag">Deep RL</span><span class="ptag">Python</span></div>
+          <button class="card-arrow proj-detail-btn" data-project="06" aria-label="View project details"><svg width="14" height="14" viewBox="0 0 16 16" fill="currentColor"><path d="M8.22 2.97a.75.75 0 0 1 1.06 0l4.25 4.25a.75.75 0 0 1 0 1.06l-4.25 4.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042L10.94 8 8.22 5.28a.75.75 0 0 1 0-1.06Z"/></svg></button>
+        </div>
+        <!-- Project 7 (Hidden) -->
+        <div class="project-card extra-project" style="display: none;" id="proj-07">
+          <div class="proj-top"><span class="proj-num">07</span><div class="proj-actions"><a href="https://github.com/Hariprasath-5128/CNN_Based_Weather_Prediction" target="_blank" rel="noopener" class="proj-icon-link proj-github-link" aria-label="View on GitHub"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2Z"/></svg></a></div></div>
+          <span class="proj-category-label">Deep Learning</span>
+          <h3>CNN Based Weather Prediction</h3>
+          <p>Convolutional Neural Network model for accurate weather prediction utilizing spatial data mapping and meteorological datasets.</p>
+          <div class="proj-tags"><span class="ptag">CNN</span><span class="ptag">TensorFlow</span></div>
+          <button class="card-arrow proj-detail-btn" data-project="07" aria-label="View project details"><svg width="14" height="14" viewBox="0 0 16 16" fill="currentColor"><path d="M8.22 2.97a.75.75 0 0 1 1.06 0l4.25 4.25a.75.75 0 0 1 0 1.06l-4.25 4.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042L10.94 8 8.22 5.28a.75.75 0 0 1 0-1.06Z"/></svg></button>
+        </div>
+        <!-- Project 8 (Hidden) -->
+        <div class="project-card extra-project" style="display: none;" id="proj-08">
+          <div class="proj-top"><span class="proj-num">08</span><div class="proj-actions"><a href="https://github.com/Hariprasath-5128/Sleeping-Monitor" target="_blank" rel="noopener" class="proj-icon-link proj-github-link" aria-label="View on GitHub"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2Z"/></svg></a></div></div>
+          <span class="proj-category-label">Computer Vision</span>
+          <h3>Sleeping Monitor</h3>
+          <p>Real-time computer vision monitoring system tracking sleep posture and vitals through video feeds without wearables.</p>
+          <div class="proj-tags"><span class="ptag">OpenCV</span><span class="ptag">Python</span></div>
+          <button class="card-arrow proj-detail-btn" data-project="08" aria-label="View project details"><svg width="14" height="14" viewBox="0 0 16 16" fill="currentColor"><path d="M8.22 2.97a.75.75 0 0 1 1.06 0l4.25 4.25a.75.75 0 0 1 0 1.06l-4.25 4.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042L10.94 8 8.22 5.28a.75.75 0 0 1 0-1.06Z"/></svg></button>
+        </div>
+        <!-- Project 9 (Hidden) -->
+        <div class="project-card extra-project" style="display: none;" id="proj-09">
+          <div class="proj-top"><span class="proj-num">09</span><div class="proj-actions"><a href="https://github.com/Hariprasath-5128/fabric_text_detection" target="_blank" rel="noopener" class="proj-icon-link proj-github-link" aria-label="View on GitHub"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2Z"/></svg></a></div></div>
+          <span class="proj-category-label">OCR</span>
+          <h3>Fabric Text Detection</h3>
+          <p>Specialized OCR pipeline engineered to accurately extract printed text from heavily textured and folded fabric materials.</p>
+          <div class="proj-tags"><span class="ptag">OCR</span><span class="ptag">Image Processing</span></div>
+          <button class="card-arrow proj-detail-btn" data-project="09" aria-label="View project details"><svg width="14" height="14" viewBox="0 0 16 16" fill="currentColor"><path d="M8.22 2.97a.75.75 0 0 1 1.06 0l4.25 4.25a.75.75 0 0 1 0 1.06l-4.25 4.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042L10.94 8 8.22 5.28a.75.75 0 0 1 0-1.06Z"/></svg></button>
+        </div>
+      </div>
+      
+      <div class="section-cta-row" data-animate="fade-up">
+        <button class="btn-primary" id="btnShowMore" style="margin-right: 12px;">Show More Projects</button>
+        <a href="https://github.com/Hariprasath-5128" target="_blank" rel="noopener" class="btn-ghost" id="all-github-btn">View all on GitHub</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== EXPERIENCE ==================== -->
+  <section id="experience" class="section-block">
+    <div class="section-container">
+      <div class="section-eyebrow-center" data-animate="fade-up"><span class="eyebrow-dot"></span> PROFESSIONAL JOURNEY</div>
+      <h2 class="section-headline" data-animate="fade-up">Work Experience</h2>
+      <p class="section-sub" data-animate="fade-up">Hands-on research and engineering roles bridging academia and real-world AI systems.</p>
+
+      <div class="experience-timeline" data-animate="fade-up">
+        <div class="exp-card" id="exp-srip">
+          <div class="exp-time-left">
+            May 2026<br>
+            <span style="color: var(--fg-muted);">Jul 2026</span>
+          </div>
+          <div class="exp-card-left">
+            <div class="exp-org-logo">
+              <img src="https://upload.wikimedia.org/wikipedia/en/c/c5/Vellore_Institute_of_Technology_seal_2017.svg" width="40" height="40" alt="VIT" style="border-radius:50%; background: white; padding: 2px;">
+            </div>
+            <div class="exp-timeline-line"></div>
+          </div>
+          <div class="exp-card-body">
+            <div class="exp-header">
+              <div>
+                <h3 class="exp-role">Student Research Intern (SRIP) – AI Research</h3>
+                <p class="exp-org">Vellore Institute of Technology, Chennai</p>
+              </div>
+              <div class="exp-meta">
+                <span class="exp-badge-active">● Currently Active</span>
+              </div>
+            </div>
+            <ul class="exp-bullets">
+              <li>Developed <strong>SERA</strong> — a Self-Evolving RAG framework for medical knowledge retrieval, with semantic retrieval, adaptive indexing, and validation pipelines, significantly improving response accuracy and contextual reasoning.</li>
+              <li>Built an <strong>AI alignment system</strong> for marine species identification enabling zero-shot cross-modal retrieval through supervised contrastive learning, Test-Time Augmentation (TTA), and Query Expansion.</li>
             </ul>
-            <button class="hamburger" id="hamburger" aria-label="Toggle navigation">
-                <span></span><span></span><span></span>
-            </button>
+            <div class="exp-tags">
+              <span class="ptag">RAG</span><span class="ptag">Contrastive Learning</span><span class="ptag">Multimodal AI</span><span class="ptag">Vector DBs</span><span class="ptag">FastAPI</span>
+            </div>
+          </div>
         </div>
-    </nav>
+      </div>
+    </div>
+  </section>
 
-    <!-- ==================== HERO ==================== -->
-    <section id="home" class="hero">
-        <div class="hero-bg">
-            <div class="orb orb-1"></div>
-            <div class="orb orb-2"></div>
-            <div class="orb orb-3"></div>
-            <div class="grid-lines"></div>
+  <!-- ==================== CERTIFICATIONS ==================== -->
+  <section id="certifications" class="section-block section-alt">
+    <div class="section-container">
+      <div class="certs-header-row" data-animate="fade-up">
+        <div class="section-eyebrow-center"><span class="eyebrow-dot"></span> CREDENTIALS</div>
+        <h2 class="section-headline" data-animate="fade-up">Milestones &amp; Certifications</h2>
+        <p class="section-sub" data-animate="fade-up">Industry-recognized certifications validating cloud, AI, and engineering proficiency.</p>
+      </div>
+      <div class="certs-grid" data-animate="fade-up">
+        <div class="cert-card" id="cert-oracle">
+          <div class="cert-card-top">
+            <!-- Oracle logo -->
+            <img src="https://upload.wikimedia.org/wikipedia/commons/5/50/Oracle_logo.svg" height="24" alt="Oracle">
+            <span class="skill-tag-label" style="margin-left: auto;">AI foundations</span>
+          </div>
+          <h3>Oracle Cloud Infrastructure 2025 Certified AI Foundations Associate</h3>
+          <p class="cert-issuer-line">Oracle · 2025</p>
+
         </div>
-        <div class="hero-content">
-            <div class="hero-left" data-animate="fade-right">
-                <div class="badge">
-                    <span class="badge-dot"></span>
-                    Available for Opportunities
-                </div>
-                <h1 class="hero-name">Hariprasath <span class="name-accent">M</span></h1>
-                <p class="hero-role">
-                    <span class="typed-text" id="typedText"></span><span class="cursor-blink">|</span>
-                </p>
-                <p class="hero-bio">AI Engineer focused on building intelligent systems across Machine Learning, LLMs, Computer Vision, and scalable cloud-native architectures with Kubernetes.</p>
-                <div class="hero-cta">
-                    <a href="#projects" class="btn btn-primary">View Projects</a>
-                    <a href="#contact"  class="btn btn-ghost">Get in Touch</a>
-                </div>
-                <div class="hero-social">
-                    <a href="https://github.com/Hariprasath-5128" target="_blank" rel="noopener" class="cs-btn github" aria-label="GitHub">
-                        <svg width="18" height="18" viewBox="0 0 24 24" fill="#000000"><path d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2Z"/></svg>
-                        GitHub
-                    </a>
-                    <a href="https://www.linkedin.com/in/hari-prasath-m-5128-/" target="_blank" rel="noopener" class="cs-btn linkedin" aria-label="LinkedIn">
-                        <svg width="18" height="18" viewBox="0 0 24 24" fill="#0A66C2"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
-                        LinkedIn
-                    </a>
-                    <a href="https://leetcode.com/u/Hariprasath5128/" target="_blank" rel="noopener" class="cs-btn leetcode" aria-label="LeetCode">
-                        <svg width="18" height="18" viewBox="0 0 94 111" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M67.5068339,83.0664138 C70.0005384,80.5763786 74.0371402,80.5828822 76.5228362,83.0809398 C79.0085322,85.5789975 79.00204,89.6226456 76.5083355,92.1126808 L65.4351451,103.169577 C55.2192332,113.370744 38.5604663,113.518673 28.1722578,103.513204 C28.112217,103.455678 23.486583,98.9201326 8.22702585,83.9570195 C-1.92478479,74.0028895 -2.93614945,58.0748736 6.61697549,47.8463644 L24.4286944,28.7745461 C33.9100043,18.6218594 51.3874487,17.5122246 62.2279907,26.2789232 L78.4052912,39.3620235 C81.1448956,41.5776292 81.5728103,45.5984975 79.3610655,48.3428842 C77.1493207,51.0872709 73.1354592,51.5159327 70.3958548,49.300327 L54.2186634,36.2173149 C48.5492813,31.6325105 38.631911,32.2621597 33.7398535,37.5006265 L15.9279056,56.5726899 C11.2772073,61.552182 11.7865613,69.5740156 17.1461283,74.8292186 C28.3515339,85.8169393 36.9874071,94.2846214 36.9973988,94.294225 C42.3981571,99.4959838 51.130862,99.418438 56.43358,94.1233737 L67.5068339,83.0664138 Z" fill="#FFA116"/>
-                            <path d="M40.6069914,72.0014117 C37.086019,72.0014117 34.2317068,69.142117 34.2317068,65.6149982 C34.2317068,62.0878794 37.086019,59.2285847 40.6069914,59.2285847 L87.6247154,59.2285847 C91.1456879,59.2285847 94,62.0878794 94,65.6149982 C94,69.142117 91.1456879,72.0014117 87.6247154,72.0014117 L40.6069914,72.0014117 Z" fill="#B3B3B3"/>
-                            <path d="M49.4124315,2.02335002 C51.8178981,-0.552320454 55.852269,-0.686893945 58.4234511,1.72277172 C60.9946333,4.13243738 61.1289722,8.17385083 58.7235056,10.7495213 L15.9282277,56.5728697 C11.2773659,61.551984 11.7867168,69.5737689 17.1459309,74.8291832 L36.9094236,94.2091099 C39.4255514,96.6764051 39.4686234,100.719828 37.0056277,103.240348 C34.5426319,105.760868 30.5062548,105.804016 27.990127,103.33672 L8.22654289,83.9567041 C-1.92467414,74.0021005 -2.93603527,58.0741402 6.61751533,47.846311 L49.4124315,2.02335002 Z" fill="#000000"/>
-                        </svg>
-                        LeetCode
-                    </a>
-                </div>
-            </div>
-            <div class="hero-right" data-animate="fade-left">
-                <div class="profile-frame">
-                    <div class="profile-glow"></div>
-                    <img src="image.png" alt="Hariprasath M at VIT Chennai podium" class="profile-img" id="profileImg">
-                    <div class="profile-ring ring-1"></div>
-                    <div class="profile-ring ring-2"></div>
-                </div>
-            </div>
+        <div class="cert-card" id="cert-google-mktg">
+          <div class="cert-card-top">
+            <!-- Google logo -->
+            <img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg" height="24" alt="Google">
+            <span class="skill-tag-label" style="margin-left: auto;">Digital marketing</span>
+          </div>
+          <h3>Fundamentals of Digital Marketing</h3>
+          <p class="cert-issuer-line">Google · 2024</p>
+
         </div>
-        <a href="#about" class="scroll-down" aria-label="Scroll down">
-            <div class="scroll-mouse"><div class="scroll-wheel"></div></div>
+        <div class="cert-card" id="cert-gcp">
+          <div class="cert-card-top">
+            <!-- Google Cloud logo -->
+            <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Google_Cloud_logo.svg" height="24" alt="Google Cloud">
+            <span class="skill-tag-label" style="margin-left: auto;">Cloud</span>
+          </div>
+          <h3>Google Cloud Certified – Associate Cloud Engineer (ACE)</h3>
+          <p class="cert-issuer-line">Google Cloud · 2026</p>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== CONTACT / FAQ ==================== -->
+  <section id="contact" class="section-block">
+    <div class="section-container">
+      <div class="section-eyebrow-center" data-animate="fade-up"><span class="eyebrow-dot"></span> FAQ</div>
+      <h2 class="section-headline" data-animate="fade-up">Curious Minds Ask</h2>
+      <div class="faq-layout" data-animate="fade-up">
+        <div class="faq-sidebar">
+          <button class="faq-category active" id="faq-cat-general" data-category="general">General</button>
+          <button class="faq-category" id="faq-cat-skills" data-category="skills">Skills</button>
+          <button class="faq-category" id="faq-cat-collab" data-category="collab">Collaboration</button>
+        </div>
+        <div class="faq-accordion" id="faqAccordion">
+          <div class="faq-group" data-category="general">
+            <span class="faq-group-label">GENERAL</span>
+            <div class="faq-item" id="faq-1"><button class="faq-q" aria-expanded="false" aria-controls="faq-1-body">Who is Hariprasath M?<svg class="faq-chevron" width="16" height="16" viewBox="0 0 16 16" fill="#3fb950"><path d="M12.78 5.22a.749.749 0 0 1 0 1.06l-4.25 4.25a.749.749 0 0 1-1.06 0L3.22 6.28a.749.749 0 1 1 1.06-1.06L8 8.939l3.72-3.719a.749.749 0 0 1 1.06 0Z"/></svg></button><div class="faq-a" id="faq-1-body" hidden>A B.Tech CSE undergraduate at VIT Chennai with a CGPA of 9.72, simultaneously pursuing a B.S. in Data Science from IIT Madras. I specialize in AI engineering — LLMs, computer vision, and cloud-native systems.</div></div>
+            <div class="faq-item" id="faq-2"><button class="faq-q" aria-expanded="false" aria-controls="faq-2-body">What are your academic achievements?<svg class="faq-chevron" width="16" height="16" viewBox="0 0 16 16" fill="#3fb950"><path d="M12.78 5.22a.749.749 0 0 1 0 1.06l-4.25 4.25a.749.749 0 0 1-1.06 0L3.22 6.28a.749.749 0 1 1 1.06-1.06L8 8.939l3.72-3.719a.749.749 0 0 1 1.06 0Z"/></svg></button><div class="faq-a" id="faq-2-body" hidden>9.72 CGPA at VIT Chennai, a published paper in Frontiers in AI, three industry certifications (Oracle, Google, GCP), and 6+ AI/ML projects spanning LLMs, vision, and cloud infrastructure.</div></div>
+            <div class="faq-item" id="faq-3"><button class="faq-q" aria-expanded="false" aria-controls="faq-3-body">Where can I see your published research?<svg class="faq-chevron" width="16" height="16" viewBox="0 0 16 16" fill="#3fb950"><path d="M12.78 5.22a.749.749 0 0 1 0 1.06l-4.25 4.25a.749.749 0 0 1-1.06 0L3.22 6.28a.749.749 0 1 1 1.06-1.06L8 8.939l3.72-3.719a.749.749 0 0 1 1.06 0Z"/></svg></button><div class="faq-a" id="faq-3-body" hidden>My paper on Medical Query Understanding &amp; Recommendation System is published in Frontiers in Artificial Intelligence. You can access it via the Publications section above.</div></div>
+          </div>
+          <div class="faq-group" data-category="skills" hidden>
+            <span class="faq-group-label">SKILLS</span>
+            <div class="faq-item" id="faq-4"><button class="faq-q" aria-expanded="false" aria-controls="faq-4-body">What AI/ML frameworks do you use?<svg class="faq-chevron" width="16" height="16" viewBox="0 0 16 16" fill="#3fb950"><path d="M12.78 5.22a.749.749 0 0 1 0 1.06l-4.25 4.25a.749.749 0 0 1-1.06 0L3.22 6.28a.749.749 0 1 1 1.06-1.06L8 8.939l3.72-3.719a.749.749 0 0 1 1.06 0Z"/></svg></button><div class="faq-a" id="faq-4-body" hidden>Primarily PyTorch, TensorFlow, and HuggingFace Transformers. I also use Scikit-learn, LangChain, FastAPI, and various cloud SDKs for GCP and AWS.</div></div>
+            <div class="faq-item" id="faq-5"><button class="faq-q" aria-expanded="false" aria-controls="faq-5-body">Do you have cloud/DevOps experience?<svg class="faq-chevron" width="16" height="16" viewBox="0 0 16 16" fill="#3fb950"><path d="M12.78 5.22a.749.749 0 0 1 0 1.06l-4.25 4.25a.749.749 0 0 1-1.06 0L3.22 6.28a.749.749 0 1 1 1.06-1.06L8 8.939l3.72-3.719a.749.749 0 0 1 1.06 0Z"/></svg></button><div class="faq-a" id="faq-5-body" hidden>Yes — I hold a GCP Associate Cloud Engineer certification and have hands-on experience with Kubernetes, Docker, and Minikube through my AI Self-Healing Autoscaler project.</div></div>
+          </div>
+          <div class="faq-group" data-category="collab" hidden>
+            <span class="faq-group-label">COLLABORATION</span>
+            <div class="faq-item" id="faq-6"><button class="faq-q" aria-expanded="false" aria-controls="faq-6-body">Are you available for internships?<svg class="faq-chevron" width="16" height="16" viewBox="0 0 16 16" fill="#3fb950"><path d="M12.78 5.22a.749.749 0 0 1 0 1.06l-4.25 4.25a.749.749 0 0 1-1.06 0L3.22 6.28a.749.749 0 1 1 1.06-1.06L8 8.939l3.72-3.719a.749.749 0 0 1 1.06 0Z"/></svg></button><div class="faq-a" id="faq-6-body" hidden>Absolutely! I'm actively looking for internship opportunities in AI/ML engineering, LLM applications, and cloud-native AI systems.</div></div>
+            <div class="faq-item" id="faq-7"><button class="faq-q" aria-expanded="false" aria-controls="faq-7-body">How can I contact you?<svg class="faq-chevron" width="16" height="16" viewBox="0 0 16 16" fill="#3fb950"><path d="M12.78 5.22a.749.749 0 0 1 0 1.06l-4.25 4.25a.749.749 0 0 1-1.06 0L3.22 6.28a.749.749 0 1 1 1.06-1.06L8 8.939l3.72-3.719a.749.749 0 0 1 1.06 0Z"/></svg></button><div class="faq-a" id="faq-7-body" hidden>Email me at hariprasath1528@gmail.com, connect on LinkedIn, or use the contact form below. I typically respond within 24 hours.</div></div>
+          </div>
+        </div>
+      </div>
+      <div class="contact-form-section" data-animate="fade-up">
+        <h3 class="contact-form-heading">Send a message</h3>
+        <div class="contact-layout">
+          <div class="contact-info-col">
+            <p class="contact-intro-text">Open to exciting collaborations, internship opportunities, or a great technical conversation.</p>
+            <div class="contact-links">
+              <a href="mailto:hariprasath1528@gmail.com" class="contact-link-item" id="contact-email-link"><div class="feat-icon-box small"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#3fb950" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></div>hariprasath1528@gmail.com</a>
+              <a href="https://www.linkedin.com/in/hari-prasath-m-5128-/" target="_blank" rel="noopener" class="contact-link-item" id="contact-linkedin-link"><div class="feat-icon-box small"><svg width="14" height="14" viewBox="0 0 24 24" fill="#0A66C2"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></div>LinkedIn Profile</a>
+              <a href="https://github.com/Hariprasath-5128" target="_blank" rel="noopener" class="contact-link-item" id="contact-gh-link"><div class="feat-icon-box small"><svg width="14" height="14" viewBox="0 0 24 24" fill="#e6edf3"><path d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2Z"/></svg></div>GitHub Profile</a>
+            </div>
+          </div>
+          <form class="contact-form" id="contactForm">
+            <div class="form-row">
+              <div class="form-group"><label for="cf-name">Name</label><input type="text" id="cf-name" name="name" placeholder="Your Name" required autocomplete="name"></div>
+              <div class="form-group"><label for="cf-email">Email</label><input type="email" id="cf-email" name="email" placeholder="your@email.com" required autocomplete="email"></div>
+            </div>
+            <div class="form-group"><label for="cf-message">Message</label><textarea id="cf-message" name="message" rows="5" placeholder="What's on your mind?" required></textarea></div>
+            <button type="submit" class="btn-primary" id="cf-submit">Send Message <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg></button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-top">
+        <a href="#home" class="footer-logo" style="text-decoration: none;">
+          <span style="background: linear-gradient(90deg, #0ea5e9, #8b5cf6); -webkit-background-clip: text; -webkit-text-fill-color: transparent; font-size: 24px; font-weight: 900; letter-spacing: -0.5px;">Hariprasath M</span>
         </a>
-    </section>
-
-    <!-- ==================== ABOUT ==================== -->
-    <section id="about" class="about">
-        <div class="container">
-            <div class="section-header" data-animate="fade-up">
-                <span class="section-label">Who I Am</span>
-                <h2 class="section-title">About Me</h2>
-            </div>
-            <div class="about-grid">
-                <div class="about-text" data-animate="fade-right">
-                    <p>I'm a <strong>Computer Science undergraduate</strong> at VIT Chennai with a passion for building intelligent, real-world AI systems. Simultaneously pursuing a B.S. in Data Science from IIT Madras, I thrive at the intersection of theory and practice.</p>
-                    <p>My work spans <strong>LLM fine-tuning, computer vision, multimodal AI</strong>, and <strong>cloud-native deployments</strong>. I love turning complex research ideas into production-ready solutions that make a tangible impact.</p>
-                    <div class="stats-row">
-                        <div class="stat-chip">
-                            <div class="stat-val">9.72</div>
-                            <div class="stat-lbl">CGPA</div>
-                        </div>
-                        <div class="stat-chip">
-                            <div class="stat-val">6+</div>
-                            <div class="stat-lbl">Projects</div>
-                        </div>
-                        <div class="stat-chip">
-                            <div class="stat-val">3</div>
-                            <div class="stat-lbl">Certifications</div>
-                        </div>
-                        <div class="stat-chip">
-                            <div class="stat-val">2</div>
-                            <div class="stat-lbl">Degrees</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="about-edu" data-animate="fade-left">
-                    <h3 class="edu-heading">Education</h3>
-                    <div class="edu-card">
-                        <div class="edu-icon">
-                            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
-                        </div>
-                        <div class="edu-info">
-                            <h4>Vellore Institute of Technology – Chennai</h4>
-                            <p class="edu-degree">B.Tech Computer Science and Engineering</p>
-                            <p class="edu-meta">2024 – Present &nbsp;|&nbsp; CGPA: 9.72</p>
-                        </div>
-                    </div>
-                    <div class="edu-card">
-                        <div class="edu-icon">
-                            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
-                        </div>
-                        <div class="edu-info">
-                            <h4>IIT Madras (Online)</h4>
-                            <p class="edu-degree">B.S. Data Science and Applications</p>
-                            <p class="edu-meta">2024 – Present</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <div class="footer-links-group">
+          <a href="#home" class="footer-link">Home</a>
+          <a href="#about" class="footer-link">My Genesis</a>
+          <a href="#skills" class="footer-link">Arsenal</a>
+          <a href="#publications" class="footer-link">Research</a>
+          <a href="#projects" class="footer-link">Innovations</a>
+          <a href="#experience" class="footer-link">Experience</a>
+          <a href="#certifications" class="footer-link">Milestones</a>
+          <a href="#contact" class="footer-link">Contact</a>
         </div>
-    </section>
-
-    <!-- ==================== SKILLS ==================== -->
-    <section id="skills" class="skills">
-        <div class="container">
-            <div class="section-header" data-animate="fade-up">
-                <span class="section-label">What I Know</span>
-                <h2 class="section-title">Skills & Expertise</h2>
-            </div>
-            <div class="skills-grid">
-                <div class="skill-card" data-animate="fade-up">
-                    <div class="skill-card-icon">
-                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
-                    </div>
-                    <h3>Programming</h3>
-                    <div class="tag-cloud">
-                        <span class="tag">Python</span><span class="tag">C</span><span class="tag">C++</span>
-                        <span class="tag">Java</span><span class="tag">R</span><span class="tag">SQL</span>
-                        <span class="tag">HTML/CSS</span>
-                    </div>
-                </div>
-                <div class="skill-card" data-animate="fade-up">
-                    <div class="skill-card-icon">
-                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="3"/><path d="M12 1v4M12 19v4M4.22 4.22l2.83 2.83M16.95 16.95l2.83 2.83M1 12h4M19 12h4M4.22 19.78l2.83-2.83M16.95 7.05l2.83-2.83"/></svg>
-                    </div>
-                    <h3>AI / ML</h3>
-                    <div class="tag-cloud">
-                        <span class="tag">PyTorch</span><span class="tag">TensorFlow</span><span class="tag">Scikit-learn</span>
-                        <span class="tag">HuggingFace</span><span class="tag">Data Preprocessing</span>
-                        <span class="tag">LoRA / PEFT</span><span class="tag">Machine Learning Techniques</span><span class="tag">Deep Learning</span><span class="tag">Reinforcement Learning</span>
-                    </div>
-                </div>
-                <div class="skill-card" data-animate="fade-up">
-                    <div class="skill-card-icon">
-                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
-                    </div>
-                    <h3>Computer Vision</h3>
-                    <div class="tag-cloud">
-                        <span class="tag">OpenCV</span><span class="tag">Vision Transformer</span>
-                        <span class="tag">Image Classification</span><span class="tag">ESP32-CAM</span>
-                    </div>
-                </div>
-                <div class="skill-card" data-animate="fade-up">
-                    <div class="skill-card-icon">
-                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg>
-                    </div>
-                    <h3>Tools & DevOps</h3>
-                    <div class="tag-cloud">
-                        <span class="tag">Git & GitHub</span><span class="tag">Docker</span>
-                        <span class="tag">Kubernetes</span><span class="tag">Minikube</span>
-                        <span class="tag">Linux</span><span class="tag">Jupyter</span>
-                        <span class="tag">GCP Cloud Services</span><span class="tag">AWS Services</span>
-                    </div>
-                </div>
-            </div>
+        <div class="footer-social">
+          <a href="https://github.com/Hariprasath-5128" target="_blank" rel="noopener" class="footer-social-link" aria-label="GitHub"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2Z"/></svg></a>
+          <a href="https://www.linkedin.com/in/hari-prasath-m-5128-/" target="_blank" rel="noopener" class="footer-social-link" aria-label="LinkedIn"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></a>
+          <a href="https://leetcode.com/u/Hariprasath5128/" target="_blank" rel="noopener" class="footer-social-link" aria-label="LeetCode"><svg width="18" height="18" viewBox="0 0 94 111" fill="none"><path d="M67.5068339,83.0664138 C70.0005384,80.5763786 74.0371402,80.5828822 76.5228362,83.0809398 C79.0085322,85.5789975 79.00204,89.6226456 76.5083355,92.1126808 L65.4351451,103.169577 C55.2192332,113.370744 38.5604663,113.518673 28.1722578,103.513204 C28.112217,103.455678 23.486583,98.9201326 8.22702585,83.9570195 C-1.92478479,74.0028895 -2.93614945,58.0748736 6.61697549,47.8463644 L24.4286944,28.7745461 C33.9100043,18.6218594 51.3874487,17.5122246 62.2279907,26.2789232 L78.4052912,39.3620235 C81.1448956,41.5776292 81.5728103,45.5984975 79.3610655,48.3428842 C77.1493207,51.0872709 73.1354592,51.5159327 70.3958548,49.300327 L54.2186634,36.2173149 C48.5492813,31.6325105 38.631911,32.2621597 33.7398535,37.5006265 L15.9279056,56.5726899 C11.2772073,61.552182 11.7865613,69.5740156 17.1461283,74.8292186 C28.3515339,85.8169393 36.9874071,94.2846214 36.9973988,94.294225 C42.3981571,99.4959838 51.130862,99.418438 56.43358,94.1233737 L67.5068339,83.0664138 Z" fill="#FFA116"/><path d="M40.6069914,72.0014117 C37.086019,72.0014117 34.2317068,69.142117 34.2317068,65.6149982 C34.2317068,62.0878794 37.086019,59.2285847 40.6069914,59.2285847 L87.6247154,59.2285847 C91.1456879,59.2285847 94,62.0878794 94,65.6149982 C94,69.142117 91.1456879,72.0014117 87.6247154,72.0014117 L40.6069914,72.0014117 Z" fill="#B3B3B3"/><path d="M49.4124315,2.02335002 C51.8178981,-0.552320454 55.852269,-0.686893945 58.4234511,1.72277172 C60.9946333,4.13243738 61.1289722,8.17385083 58.7235056,10.7495213 L15.9282277,56.5728697 C11.2773659,61.551984 11.7867168,69.5737689 17.1459309,74.8291832 L36.9094236,94.2091099 C39.4255514,96.6764051 39.4686234,100.719828 37.0056277,103.240348 C34.5426319,105.760868 30.5062548,105.804016 27.990127,103.33672 L8.22654289,83.9567041 C-1.92467414,74.0021005 -2.93603527,58.0741402 6.61751533,47.846311 L49.4124315,2.02335002 Z" fill="#e6edf3"/></svg></a>
         </div>
-    </section>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 Hariprasath M. Crafted with precision.</span>
+        <span class="footer-bottom-right">AI Research Engineer · VIT Chennai</span>
+      </div>
+    </div>
+  </footer>
 
-    <!-- ==================== PROJECTS ==================== -->
-    <section id="projects" class="projects">
-        <div class="container">
-            <div class="section-header" data-animate="fade-up">
-                <span class="section-label">What I've Built</span>
-                <h2 class="section-title">Featured Projects</h2>
-            </div>
-            <div class="projects-grid">
+  <!-- ==================== PROJECT DETAIL MODAL ==================== -->
+  <div class="proj-modal-overlay" id="projModalOverlay" role="dialog" aria-modal="true" aria-label="Project Details">
+    <div class="proj-modal" id="projModal">
+      <button class="proj-modal-close" id="projModalClose" aria-label="Close modal">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      </button>
+      <div class="proj-modal-body" id="projModalBody"></div>
+    </div>
+  </div>
 
-                <!-- Project 1 -->
-                <div class="project-card featured" data-animate="fade-up">
-                    <div class="project-header">
-                        <span class="project-num">01</span>
-                        <div class="project-links">
-                            <a href="https://www.frontiersin.org/journals/artificial-intelligence/articles/10.3389/frai.2026.1807268/full" target="_blank" rel="noopener" class="icon-link" aria-label="View Paper">
-                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
-                            </a>
-                        </div>
-                    </div>
-                    <span class="featured-badge">★ Featured</span>
-                    <h3>Medical Query Understanding & Recommendation System</h3>
-                    <p>Fine-tuned DeepSeek and LLaMA models using LoRA-based PEFT and model merging. Achieved ~70–80% performance improvement in analytical reasoning and medical dosage calculations with PyTorch & Transformers.</p>
-                    <div class="project-tags">
-                        <span class="ptag">LLM Fine-Tuning</span><span class="ptag">LoRA</span><span class="ptag">PyTorch</span><span class="ptag">DeepSeek</span>
-                    </div>
-                </div>
-
-                <!-- Project 2 -->
-                <div class="project-card" data-animate="fade-up">
-                    <div class="project-header">
-                        <span class="project-num">02</span>
-                        <div class="project-links">
-                            <a href="https://github.com/Hariprasath-5128/Plant_Monitoring_VIT" target="_blank" rel="noopener" class="icon-link" aria-label="View on GitHub">
-                                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2Z"/></svg>
-                            </a>
-                        </div>
-                    </div>
-                    <h3>Real-Time Plant Disease Detection System</h3>
-                    <p>Real-time plant disease monitoring using ESP32-CAM and a 15M-parameter Vision Transformer (ViT) fine-tuned on PlantVillage dataset. ~80% classification accuracy with fertilizer recommendation support.</p>
-                    <div class="project-tags">
-                        <span class="ptag">Computer Vision</span><span class="ptag">ViT</span><span class="ptag">ESP32-CAM</span><span class="ptag">IoT</span>
-                    </div>
-                </div>
-
-                <!-- Project 3 -->
-                <div class="project-card" data-animate="fade-up">
-                    <div class="project-header">
-                        <span class="project-num">03</span>
-                        <div class="project-links">
-                            <a href="https://github.com/Hariprasath-5128" target="_blank" rel="noopener" class="icon-link" aria-label="View on GitHub">
-                                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2Z"/></svg>
-                            </a>
-                        </div>
-                    </div>
-                    <h3>Syntax AI – AI-Based Code Refactoring Tool</h3>
-                    <p>AI-powered application for code refactoring, error detection, and automated code generation. Built with Python AI agents, SQL-based backend, and an intuitive web interface using HTML/CSS.</p>
-                    <div class="project-tags">
-                        <span class="ptag">AI Agents</span><span class="ptag">Python</span><span class="ptag">SQL</span><span class="ptag">Web</span>
-                    </div>
-                </div>
-
-                <!-- Project 4 -->
-                <div class="project-card featured" data-animate="fade-up">
-                    <div class="project-header">
-                        <span class="project-num">04</span>
-                        <div class="project-links">
-                            <a href="https://github.com/Hariprasath-5128" target="_blank" rel="noopener" class="icon-link" aria-label="View on GitHub">
-                                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2Z"/></svg>
-                            </a>
-                        </div>
-                    </div>
-                    <span class="featured-badge">★ Featured</span>
-                    <h3>SERA – Self-Evolving Retrieval-Augmented Generation</h3>
-                    <p>Intelligent RAG framework that enhances semantic search through adaptive retrieval, Super-Node synthesis, and validation-driven learning. Built with local LLM inference and vector databases for scalable, accurate knowledge retrieval.</p>
-                    <div class="project-tags">
-                        <span class="ptag">Adaptive RAG</span><span class="ptag">LLM</span><span class="ptag">ChromaDB</span><span class="ptag">FastAPI</span><span class="ptag">Semantic Search</span>
-                    </div>
-                </div>
-
-                <!-- Project 5 -->
-                <div class="project-card featured" data-animate="fade-up">
-                    <div class="project-header">
-                        <span class="project-num">05</span>
-                        <div class="project-links">
-                            <a href="https://github.com/Hariprasath-5128" target="_blank" rel="noopener" class="icon-link" aria-label="View on GitHub">
-                                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2Z"/></svg>
-                            </a>
-                        </div>
-                    </div>
-                    <span class="featured-badge">★ Featured</span>
-                    <h3>Multimodal Marine Species Identification</h3>
-                    <p>AI system identifying marine mammals using audio and image data. Integrated LLM (text), LVM (vision), and LAM (audio) for cross-modal species recognition. Aligned separate audio-image datasets for effective training.</p>
-                    <div class="project-tags">
-                        <span class="ptag">Multimodal AI</span><span class="ptag">LLM</span><span class="ptag">Computer Vision</span><span class="ptag">Audio ML</span>
-                    </div>
-                </div>
-
-                <!-- Project 6 -->
-                <div class="project-card featured" data-animate="fade-up">
-                    <div class="project-header">
-                        <span class="project-num">06</span>
-                        <div class="project-links">
-                            <a href="https://github.com/Hariprasath-5128/k8s-ai-self-healing-autoscaler" target="_blank" rel="noopener" class="icon-link" aria-label="View on GitHub">
-                                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2Z"/></svg>
-                            </a>
-                        </div>
-                    </div>
-                    <span class="featured-badge">★ Featured</span>
-                    <h3>AI Self-Healing Kubernetes Autoscaler</h3>
-                    <p>AI-powered Kubernetes autoscaler that dynamically prioritizes critical workloads using real-time CPU metrics. Integrated Minikube, Docker, and a custom AI prediction engine with live metrics streaming and predictive scaling logic.</p>
-                    <div class="project-tags">
-                        <span class="ptag">Kubernetes</span><span class="ptag">Docker</span><span class="ptag">Minikube</span><span class="ptag">AI/ML</span>
-                    </div>
-                </div>
-
-            </div>
-            <div class="projects-cta" data-animate="fade-up">
-                <a href="https://github.com/Hariprasath-5128" target="_blank" rel="noopener" class="btn btn-outline">
-                    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2Z"/></svg>
-                    View All on GitHub
-                </a>
-            </div>
-        </div>
-    </section>
-
-    <!-- ==================== CERTIFICATIONS ==================== -->
-    <section id="certifications" class="certifications">
-        <div class="container">
-            <div class="section-header" data-animate="fade-up">
-                <span class="section-label">Credentials</span>
-                <h2 class="section-title">Certifications</h2>
-            </div>
-            <div class="certs-grid">
-                <div class="cert-card" data-animate="fade-up">
-                    <div class="cert-logo oracle">
-                        <svg width="40" height="40" viewBox="0 0 60 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <rect width="60" height="20" rx="3" fill="#C74634"/>
-                          <text x="50%" y="14" font-size="10" font-family="Arial,sans-serif" font-weight="bold" fill="white" text-anchor="middle">ORACLE</text>
-                        </svg>
-                    </div>
-                    <div class="cert-info">
-                        <h3>Oracle Cloud Infrastructure 2025 Certified AI Foundations Associate</h3>
-                        <p class="cert-issuer">Oracle</p>
-                        <span class="cert-year">2025</span>
-                    </div>
-                </div>
-                <div class="cert-card" data-animate="fade-up">
-                    <div class="cert-logo google">
-                        <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor"><path d="M21.35 11.1h-9.17v2.73h6.51c-.33 3.81-3.5 5.44-6.5 5.44C8.36 19.27 5 16.25 5 12c0-4.1 3.2-7.27 7.2-7.27 3.09 0 4.9 1.97 4.9 1.97L19 4.72S16.56 2 12.1 2C6.42 2 2.03 6.8 2.03 12c0 5.05 4.13 10 10.22 10 5.35 0 9.25-3.67 9.25-9.09 0-1.15-.15-1.81-.15-1.81z"/></svg>
-                    </div>
-                    <div class="cert-info">
-                        <h3>Fundamentals of Digital Marketing</h3>
-                        <p class="cert-issuer">Google</p>
-                        <span class="cert-year">2024</span>
-                    </div>
-                </div>
-                <div class="cert-card" data-animate="fade-up">
-                    <div class="cert-logo gcp">
-                        <svg width="36" height="36" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <path d="M32 12l12 6v12l-12 6-12-6V18z" fill="#4285F4"/>
-                          <path d="M20 18v12l12 6V24z" fill="#34A853"/>
-                          <path d="M44 18v12l-12 6V24z" fill="#FBBC05"/>
-                          <path d="M32 12l12 6-12 6-12-6z" fill="#EA4335"/>
-                        </svg>
-                    </div>
-                    <div class="cert-info">
-                        <h3>Google Cloud Certified - Associate Cloud Engineer (ACE)</h3>
-                        <p class="cert-issuer">Google Cloud</p>
-                        <span class="cert-year">2026</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- ==================== CONTACT ==================== -->
-    <section id="contact" class="contact">
-        <div class="container">
-            <div class="section-header" data-animate="fade-up">
-                <span class="section-label">Let's Connect</span>
-                <h2 class="section-title">Get In Touch</h2>
-            </div>
-            <div class="contact-grid">
-                <div class="contact-info" data-animate="fade-right">
-                    <p class="contact-intro">I'm always open to exciting collaborations, internship opportunities, or just a great technical conversation. Feel free to reach out!</p>
-                    <div class="contact-items">
-                        <a href="mailto:hariprasath1528@gmail.com" class="contact-item">
-                            <div class="ci-icon">
-                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-                            </div>
-                            <div>
-                                <span class="ci-label">Email</span>
-                                <span class="ci-val">hariprasath1528@gmail.com</span>
-                            </div>
-                        </a>
-                        <a href="tel:+918056352791" class="contact-item">
-                            <div class="ci-icon">
-                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.38 2 2 0 0 1 3.59 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.56a16 16 0 0 0 5.53 5.53l.75-.93a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-                            </div>
-                            <div>
-                                <span class="ci-label">Phone</span>
-                                <span class="ci-val">+91 80563 52791</span>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="contact-socials">
-                        <a href="https://www.linkedin.com/in/hari-prasath-m-5128-/" target="_blank" rel="noopener" class="cs-btn linkedin">
-                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M22.23 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.46c.98 0 1.77-.77 1.77-1.73V1.73C24 .77 23.2 0 22.23 0zM7.12 20.45H3.56V9h3.56v11.45zM5.34 7.43a2.06 2.06 0 110-4.13 2.06 2.06 0 010 4.13zM20.45 20.45h-3.56v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28z" fill="#0A66C2"/></svg>
-                            LinkedIn
-                        </a>
-                        <a href="https://github.com/Hariprasath-5128" target="_blank" rel="noopener" class="cs-btn github">
-                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.44 9.8 8.21 11.39.6.11.82-.26.82-.58v-2.04c-3.34.73-4.04-1.61-4.04-1.61-.55-1.39-1.33-1.76-1.33-1.76-1.09-.74.08-.73.08-.73 1.2.08 1.84 1.24 1.84 1.24 1.07 1.83 2.81 1.3 3.49 1 .11-.78.42-1.31.76-1.61-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.12-.3-.54-1.52.12-3.18 0 0 1.01-.32 3.3 1.23.96-.27 1.98-.4 3-.4s2.04.13 3 .4c2.29-1.55 3.3-1.23 3.3-1.23.66 1.66.24 2.88.12 3.18.77.84 1.24 1.91 1.24 3.22 0 4.61-2.81 5.62-5.48 5.92.43.37.81 1.1.81 2.22v3.29c0 .32.22.69.82.58C20.56 21.8 24 17.3 24 12c0-6.63-5.37-12-12-12z" fill="#181717"/></svg>
-                            GitHub
-                        </a>
-                        <a href="https://leetcode.com/u/Hariprasath5128/" target="_blank" rel="noopener" class="cs-btn leetcode">
-                            <svg width="20" height="20" viewBox="0 0 94 111" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M67.5068339,83.0664138 C70.0005384,80.5763786 74.0371402,80.5828822 76.5228362,83.0809398 C79.0085322,85.5789975 79.00204,89.6226456 76.5083355,92.1126808 L65.4351451,103.169577 C55.2192332,113.370744 38.5604663,113.518673 28.1722578,103.513204 C28.112217,103.455678 23.486583,98.9201326 8.22702585,83.9570195 C-1.92478479,74.0028895 -2.93614945,58.0748736 6.61697549,47.8463644 L24.4286944,28.7745461 C33.9100043,18.6218594 51.3874487,17.5122246 62.2279907,26.2789232 L78.4052912,39.3620235 C81.1448956,41.5776292 81.5728103,45.5984975 79.3610655,48.3428842 C77.1493207,51.0872709 73.1354592,51.5159327 70.3958548,49.300327 L54.2186634,36.2173149 C48.5492813,31.6325105 38.631911,32.2621597 33.7398535,37.5006265 L15.9279056,56.5726899 C11.2772073,61.552182 11.7865613,69.5740156 17.1461283,74.8292186 C28.3515339,85.8169393 36.9874071,94.2846214 36.9973988,94.294225 C42.3981571,99.4959838 51.130862,99.418438 56.43358,94.1233737 L67.5068339,83.0664138 Z" fill="#FFA116"/>
-                                <path d="M40.6069914,72.0014117 C37.086019,72.0014117 34.2317068,69.142117 34.2317068,65.6149982 C34.2317068,62.0878794 37.086019,59.2285847 40.6069914,59.2285847 L87.6247154,59.2285847 C91.1456879,59.2285847 94,62.0878794 94,65.6149982 C94,69.142117 91.1456879,72.0014117 87.6247154,72.0014117 L40.6069914,72.0014117 Z" fill="#B3B3B3"/>
-                                <path d="M49.4124315,2.02335002 C51.8178981,-0.552320454 55.852269,-0.686893945 58.4234511,1.72277172 C60.9946333,4.13243738 61.1289722,8.17385083 58.7235056,10.7495213 L15.9282277,56.5728697 C11.2773659,61.551984 11.7867168,69.5737689 17.1459309,74.8291832 L36.9094236,94.2091099 C39.4255514,96.6764051 39.4686234,100.719828 37.0056277,103.240348 C34.5426319,105.760868 30.5062548,105.804016 27.990127,103.33672 L8.22654289,83.9567041 C-1.92467414,74.0021005 -2.93603527,58.0741402 6.61751533,47.846311 L49.4124315,2.02335002 Z" fill="#000000"/>
-                            </svg>
-                            LeetCode
-                        </a>
-                    </div>
-                </div>
-                <form class="contact-form" id="contactForm" data-animate="fade-left">
-                    <div class="form-group">
-                        <label for="name">Name</label>
-                        <input type="text" id="name" name="name" placeholder="Your Name" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="email">Email</label>
-                        <input type="email" id="email" name="email" placeholder="your@email.com" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="message">Message</label>
-                        <textarea id="message" name="message" rows="5" placeholder="What's on your mind?" required></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-primary submit-btn" id="submitBtn">
-                        <span>Send Message</span>
-                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
-                    </button>
-                </form>
-            </div>
-        </div>
-    </section>
-
-    <!-- ==================== FOOTER ==================== -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <span class="footer-logo">Hariprasath M</span>
-                <p>Crafted with passion &amp; precision &copy; 2026 Hariprasath M</p>
-                <div class="footer-links">
-                    <a href="https://github.com/Hariprasath-5128"           target="_blank" rel="noopener">GitHub</a>
-                    <a href="https://www.linkedin.com/in/hari-prasath-m-5128-/" target="_blank" rel="noopener">LinkedIn</a>
-                    <a href="https://leetcode.com/u/Hariprasath5128/"        target="_blank" rel="noopener">LeetCode</a>
-                </div>
-            </div>
-        </div>
-    </footer>
-
-    <script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
