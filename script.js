@@ -86,8 +86,6 @@ document.addEventListener('DOMContentLoaded', () => {
   initHamburger();
   initStatsCarousel();
   initIDEFileSwitcher();
-  initFAQ();
-  initFAQCategories();
   initScrollAnimations();
   initContactForm();
   initProjectsShowMore();
@@ -558,72 +556,7 @@ function initIDEFileSwitcher() {
   });
 }
 
-/* ─────────────────────────────────────────────────────
-   FAQ ACCORDION
-   ───────────────────────────────────────────────────── */
-function initFAQ() {
-  const items = document.querySelectorAll('.faq-item');
 
-  items.forEach(item => {
-    const btn  = item.querySelector('.faq-q');
-    const body = item.querySelector('.faq-a');
-    if (!btn || !body) return;
-
-    btn.addEventListener('click', () => {
-      const isOpen = btn.getAttribute('aria-expanded') === 'true';
-
-      items.forEach(other => {
-        other.querySelector('.faq-q')?.setAttribute('aria-expanded', 'false');
-        const b = other.querySelector('.faq-a');
-        if (b) b.hidden = true;
-      });
-
-      if (!isOpen) {
-        btn.setAttribute('aria-expanded', 'true');
-        body.hidden = false;
-        body.style.maxHeight = '0';
-        body.style.overflow  = 'hidden';
-        body.style.transition = 'max-height 0.28s ease';
-        requestAnimationFrame(() => { body.style.maxHeight = body.scrollHeight + 'px'; });
-        body.addEventListener('transitionend', () => {
-          body.style.maxHeight = body.style.overflow = body.style.transition = '';
-        }, { once: true });
-      }
-    });
-  });
-
-  const first = document.querySelector('.faq-q');
-  const firstA = document.querySelector('.faq-a');
-  if (first && firstA) { first.setAttribute('aria-expanded', 'true'); firstA.hidden = false; }
-}
-
-/* ─────────────────────────────────────────────────────
-   FAQ CATEGORIES
-   ───────────────────────────────────────────────────── */
-function initFAQCategories() {
-  const cats   = document.querySelectorAll('.faq-category');
-  const groups = document.querySelectorAll('.faq-group');
-
-  cats.forEach(cat => {
-    cat.addEventListener('click', () => {
-      const target = cat.dataset.category;
-      cats.forEach(c => c.classList.remove('active'));
-      cat.classList.add('active');
-
-      groups.forEach(g => {
-        const show = g.dataset.category === target;
-        g.hidden = !show;
-        if (show) {
-          g.querySelectorAll('.faq-q').forEach(q => q.setAttribute('aria-expanded', 'false'));
-          g.querySelectorAll('.faq-a').forEach(a => { a.hidden = true; });
-          const q = g.querySelector('.faq-q');
-          const a = g.querySelector('.faq-a');
-          if (q && a) { q.setAttribute('aria-expanded', 'true'); a.hidden = false; }
-        }
-      });
-    });
-  });
-}
 
 /* ─────────────────────────────────────────────────────
    SCROLL ANIMATIONS — re-trigger on enter AND leave
